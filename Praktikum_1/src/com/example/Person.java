@@ -3,45 +3,51 @@ package com.example;
 import java.util.Date;
 
 public class Person {
-	public enum Gender {
-		MALE, FEMALE
-	}
+    public enum Gender {
+        MALE, FEMALE
+    }
 
-	private Gender gender;
-	private String firstName;
-	private String lastName;
-	private Date birthday;
+    private Gender gender;
+    private String firstName;
+    private String lastName;
+    private Date birthday;
 
-	public Gender getGender() {
-		return gender;
-	}
+    public Person(Gender gender, String firstName, String lastName, Date brithday) {
+        this.gender = gender;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.birthday = brithday;
+    }
 
-	public void setGender(Gender gender) {
-		this.gender = gender;
-	}
+    public Gender getGender() {
+        return gender;
+    }
 
-	public String getFirstName() {
-		return firstName;
-	}
+    public void setGender(Gender gender) {
+        this.gender = gender;
+    }
 
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
-	}
+    public String getFirstName() {
+        return firstName;
+    }
 
-	public String getLastName() {
-		return lastName;
-	}
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
 
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
-	}
+    public String getLastName() {
+        return lastName;
+    }
 
-	public Date getBirthday() {
-		return birthday;
-	}
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
 
-	public void setBirthday(Date birthday) {
-		this.birthday = birthday;
-	}
+    public Date getBirthday() {
+        return birthday;
+    }
 
+    public void setBirthday(Date birthday) {
+        this.birthday = birthday;
+    }
 }
