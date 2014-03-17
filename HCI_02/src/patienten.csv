@@ -1,0 +1,500 @@
+FEMALE,Iva,Cloutier,Möhe 27,6440,Ingenbohl,041 262 63 71,07.04.1982
+FEMALE,Ines,Gottlieb,Dreibündenstrasse 60,8114,Dänikon,044 877 30 81,09.02.1983
+FEMALE,Eufrosina,Milano,Kornquaderweg 126,1020,Renens,021 206 25 64,27.02.1943
+FEMALE,Rosa,Marchesi,Piazza Rezzonico 79,8374,Vogelsang,044 814 81 64,19.06.2002
+MALE,Alessandro,Pisano,Untere Bahnhofstrasse 18,7602,Casaccia,081 268 53 58,12.12.1962
+MALE,Paul,Kuester,Strickstrasse 146,8092,Zürich,043 729 71 40,04.03.1912
+FEMALE,Federica,Sabbatini,Obere Bahnhofstrasse 62,8414,Bebikon,052 981 47 99,24.08.1931
+MALE,Searlas,Sansouci,Möhe 37,5083,Ittenthal,062 654 63 78,07.06.1972
+FEMALE,Céline,Duranseau,Kammelenbergstrasse 117,4534,Flumenthal,032 307 91 63,29.11.1937
+FEMALE,Ute,Eiffel,Brunnacherstrasse 26,8041,Zürich,043 499 14 11,07.11.1946
+MALE,Felix,Schmitt,Fortunastrasse 126,3619,Eriz,033 462 92 13,23.10.1958
+FEMALE,Melanie,Sankt,Brunnacherstrasse 133,4222,Zwingen,061 341 48 49,24.09.1993
+FEMALE,Lucrezia,Bellucci,Kronwiesenweg 87,9643,Krummenau,071 827 37 92,01.11.1950
+MALE,Ermenegildo,Angelo,Casa Gielgia 134,6780,Nante,091 727 92 93,12.08.1987
+FEMALE,Frediana,Manfrin,Seefeldstrasse 8,6064,Kerns,041 787 98 14,29.05.1969
+MALE,Luca,Nagel,Lichtmattstrasse 9,5085,Bütz,062 738 38 16,13.10.1958
+MALE,Delmar,Fouquet,Casut 9,1660,L'Etivaz,026 625 97 82,25.10.1946
+FEMALE,Tanja,Drescher,Auerstrasse 122,1987,Mâche,027 944 27 15,21.11.1954
+FEMALE,Jennifer,Freeh,Untere Aegerten 65,1410,Correvon,024 916 27 86,05.08.1942
+MALE,Giosuè,Pisani,Casa Gielgia 134,4813,Neudorf,062 737 79 75,04.03.1977
+MALE,Henri,Senneville,Via Franscini 38,8881,Tscherlach,055 333 53 47,16.07.1954
+MALE,Bernd,Walter,Lützelflühstrasse 8,8414,Wiler,052 610 80 32,01.03.1961
+MALE,Liberato,Esposito,Brucknerweg 16,3752,Hasli,031 320 75 49,03.08.1984
+FEMALE,Pupa,Genovese,Möhe 104,3629,Jaberg,033 424 43 65,15.08.2004
+MALE,Oronzo,Davide,Untere Aegerten 91,6663,Comologno,091 494 95 84,05.02.1903
+FEMALE,Luana,Udinese,Valéestrasse 118,1522,Oulens-sur-Lucens,021 351 30 15,02.04.1954
+MALE,Efisio,Bianchi,Piazza Indipendenza 108,1538,Treytorrens,021 478 93 23,10.02.1953
+MALE,Stanislao,Marchesi,Mattenstrasse 41,5643,Sins,062 629 45 25,05.11.1987
+FEMALE,Angelique,Parizeau,Breitenstrasse 10,4008,Basel,061 586 97 53,03.01.1946
+MALE,Ermes,Siciliano,Quadra 47,6760,Faido,091 609 27 71,10.04.1928
+MALE,Agramant,Quessy,Kappelergasse 139,1123,Aclens,021 439 48 12,24.04.1932
+FEMALE,Kristin,Fuchs,Allmenrüti 119,3624,Schwendibach,033 496 98 98,01.12.1989
+MALE,Florus,Archambault,Püntstrasse 96,3252,Worben,032 249 79 35,09.12.1950
+FEMALE,Maryse,Coulombe,Schulstrasse 148,8912,Wolsen,044 361 28 88,25.01.1972
+MALE,Alessandro,Barese,Betburweg 20,1261,Longirod,022 286 94 63,14.11.1928
+FEMALE,Mandy,Durr,Neubertbogen 62,3155,Rohrbach,031 520 25 47,04.03.1955
+MALE,Talbot,Pelland,Schulstrasse 104,6383,Wirzweli,041 389 13 27,07.12.1940
+MALE,Patrick,Labelle,Via Franscini 114,3415,Uetigen,034 479 22 96,23.10.1937
+FEMALE,Stefanie,Kuefer,Lungolago 64,1410,Thierrens,024 469 59 10,05.02.1939
+MALE,René,Laforest,Rägetenstrasse 65,4943,Hofe,062 908 55 96,14.12.1970
+MALE,Garland,Bonneville,Üerklisweg 99,7084,Brienz/Brinzauls,081 257 34 71,31.03.1953
+MALE,Lucas,Strauss,Stradun 46,1726,Grenilles,026 399 79 34,14.08.1964
+FEMALE,Minette,Lavallée,Bösch 10,1784,Cournillens,026 368 66 77,12.10.1947
+MALE,Calimero,Onio,Casa Gielgia 119,8484,Neschwil,052 842 72 33,05.09.1900
+FEMALE,Nicole,Schweizer,Loorenstrasse 91,1242,Choully,022 806 71 56,22.08.1986
+FEMALE,Romola,Rizzo,Im Sandbüel 82,1704,Fribourg,026 284 55 67,13.05.1947
+FEMALE,Dominique,Audet,Kappelergasse 3,8522,Aawangen,052 468 38 26,27.08.1987
+FEMALE,Stéphanie,Lang,Plattenstrasse 137,3942,Raron,027 907 40 93,31.05.1946
+FEMALE,Elisabetta,Zito,Sonnenbergstr 95,5620,Bremgarten,062 816 22 62,10.10.1979
+MALE,Felix,Dietrich,Via Albarelle 74,3066,Stettlen,031 381 19 95,26.07.1954
+FEMALE,Eleonora,Beneventi,Rosenweg 6,4900,Langenthal,062 672 19 63,09.12.1902
+FEMALE,Maia,Cattaneo,Quadra 58,8630,Fägswil,052 307 29 82,12.12.1975
+MALE,Arber,Rouleau,Im Sandbüel 4,8807,Freienbach,055 529 24 93,28.09.2011
+MALE,Renzo,Bellucci,Erlenweg 46,5636,Benzenschwil,062 671 31 21,20.04.1942
+MALE,Brice,Lampron,Mittlerer Thalackerweg 124,3295,Rüti bei Büren,032 713 61 68,15.02.1988
+FEMALE,Editta,Fallaci,Grossmatt 148,3419,Biembach,034 829 92 48,08.03.1910
+FEMALE,Marina,Eisenhower,Boldistrasse 29,8566,Neuwilen,052 241 16 26,14.03.2006
+FEMALE,Dionisia,Lombardi,Erlenweg 63,3376,Berken,032 557 42 16,08.09.1943
+MALE,Lukas,Zimmer,Via dalla Staziun 69,6485,Dörfli,041 804 16 15,13.08.2010
+FEMALE,Sophia,Schreiber,Lungolago 46,3115,Thalgut,031 314 80 75,16.10.1948
+MALE,Dreux,Norbert,Studhaldenstrasse 144,1880,Les Plans-sur-Bex,024 834 77 71,02.09.1990
+FEMALE,Charmaine,Caya,Quadra 59,8552,Felben-Wellhausen,052 236 78 48,20.02.1940
+FEMALE,Tullia,Romano,Untere Aegerten 48,1426,Concise,024 591 78 72,02.12.1981
+MALE,Galdino,Trevisani,Sondanella 15,8627,Grüningen,052 756 15 38,07.05.1950
+FEMALE,Vittoria,Li Fonti,Via Verbano 56,9107,Urnäsch,071 821 82 88,31.07.1950
+MALE,Leroy,Gabriaux,Piazza Rezzonico 35,5612,Villmergen,062 249 29 82,31.10.1942
+MALE,Hardouin,Gregoire,Schulstrasse 145,8400,Winterthur,052 399 86 57,07.03.1980
+FEMALE,Laura,Schuster,Loorenstrasse 9,6747,Chironico,091 456 17 37,02.08.1960
+FEMALE,Klaudia,Freeh,Tösstalstrasse 130,3664,Weierbode,033 271 95 23,30.05.2006
+FEMALE,Esmeraude,Lafond,Zürichstrasse 9,8806,Bäch,055 543 25 70,12.02.1914
+FEMALE,Petra,Pfeifer,Studhaldenstrasse 100,1868,Les Neyres,024 787 46 62,06.09.1952
+FEMALE,Barbara,Freytag,Lützelflühstrasse 92,5637,Wiggwil,062 500 63 11,06.05.1988
+MALE,Jürgen,Gottlieb,Via Camischolas sura 32,2802,Develier,032 208 14 73,17.04.2006
+MALE,Robert,Pfeiffer,Bösch 116,1263,Crassier,022 555 25 32,17.02.1985
+FEMALE,Jeannine,DeGrasse,Stradun 54,8415,Gräslikon,052 814 31 33,26.08.2007
+FEMALE,Fleurette,Hébert,Brunnacherstrasse 99,8063,Zürich,043 830 45 30,23.07.2008
+FEMALE,Lundy,Larivière,Höhenweg 133,1987,Hérémence,027 491 16 23,25.06.1943
+MALE,Romeo,Greece,Hasenbühlstrasse 96,7402,Bonaduz,081 210 15 95,01.01.1914
+FEMALE,Elvira,Monaldo,Schuepisstrasse 77,8536,Hüttwilen,052 497 59 59,21.04.1973
+MALE,Raymond,Gervais,Via Gabbietta 91,6777,Varenzo,091 980 92 40,22.09.1968
+MALE,Markus,Daecher,Hauptstrasse 150,6748,Monte Angone,091 624 19 85,24.10.1976
+FEMALE,Ursula,Schultheiss,Werkstrasse 4,7182,Cavardiras,081 922 86 97,09.02.1929
+FEMALE,Filippa,Trevisan,Gartenhof 92,1680,Arruffens,026 763 91 88,05.10.1936
+FEMALE,Lisa,Nussbaum,Erlenweg 131,8965,Berikon,044 719 26 60,15.07.1942
+FEMALE,Anja,Baum,Via Verbano 52,6465,Unterschächen,041 513 44 61,21.08.2007
+MALE,Sebastian,Braun,Bösch 88,1795,Coussiberlé,026 794 71 87,01.11.1996
+FEMALE,Delma,Marchesi,Kopfhölzistrasse 43,1012,Lausanne,021 707 20 25,28.11.1995
+FEMALE,Susanne,Hoffmann,Wiesenstrasse 107,8241,Barzheim,044 768 66 90,06.11.1983
+FEMALE,Olimpia,Calabrese,Caltgadira 113,6915,Noranco,091 447 76 14,20.05.1932
+FEMALE,Allyriane,Caisse,Neubertbogen 6,9401,Rorschach,071 294 11 43,01.02.1949
+MALE,Natale,Lombardi,Kopfhölzistrasse 76,3822,Lauterbrunnen,033 917 60 40,21.06.1977
+FEMALE,Aurélie,Tanguay,Untere Bahnhofstrasse 85,7113,Camuns,081 825 87 64,27.11.1967
+FEMALE,Blanchefle,Chrétien,Brucknerweg 6,4630,Härkingen,062 788 66 10,26.09.1956
+FEMALE,Sabine,Hoover,Vallerstrasse 42,8422,Pfungen,052 861 51 79,08.06.1928
+MALE,Fedro,Buccho,Pfaffacherweg 121,5107,Schinznach-Dorf,062 839 86 56,22.09.1989
+FEMALE,Pascaline,Hébert,Bösch 1,1526,Cremin,021 387 94 51,31.08.2000
+MALE,Dennis,Hofmann,Bösch 102,1023,Crissier,021 999 55 98,14.05.1956
+FEMALE,Kerstin,Schreiber,Via Pestariso 99,9015,St. Gallen,071 229 43 14,07.03.1992
+MALE,Secondo,Baresi,Via dalla Staziun 26,3186,Düdingen,031 716 98 35,26.11.1943
+FEMALE,Heike,Freitag,Via Vigizzi 70,5728,Unterdorf,062 636 17 29,13.09.1958
+MALE,Mario,Finkel,Stradun 48,3178,Grenchen,031 296 66 29,04.10.1948
+FEMALE,Alberta,Lo Duca,Püntstrasse 94,6144,Zell,041 759 54 61,02.12.1935
+FEMALE,Brigitte,Wulf,Lützelflühstrasse 59,3207,Wileroltigen,032 738 84 97,14.08.1968
+MALE,Umberto,Pagnotto,Bösch 61,1653,Crésuz,026 372 24 84,01.01.1930
+MALE,Urbano,Angelo,Via delle Vigne 75,1610,Vuibroye,026 727 84 60,26.05.1937
+MALE,Ogier,Sabourin,Im Wingert 123,1634,Le Villaret,026 682 94 51,20.06.1981
+FEMALE,Belda,Parizeau,Plattenstrasse 42,9038,Rehetobel,071 410 91 52,09.01.1986
+FEMALE,Annunziata,Udinese,Strickstrasse 128,8081,Zürich,043 318 95 73,02.07.1949
+MALE,Ernest,Sciverit,Spinatsch 34,2112,Môtiers,032 606 11 14,18.11.1982
+FEMALE,Paulette,Laprise,Neubertbogen 45,1754,Rosé,026 248 29 27,24.02.1967
+FEMALE,Johanna,Herz,Caltgadira 101,6746,Nivo,091 407 95 15,27.07.2009
+FEMALE,Claudia,Feierabend,Forrenböhlstrasse 49,8532,Kartause-Ittingen,052 901 39 83,22.09.1941
+MALE,Maximilian,Shuster,Obere Bahnhofstrasse 43,2713,Bellelay,032 329 44 24,02.01.1954
+FEMALE,Fulvia,Zito,Im Wingert 101,5601,Lenzburg,062 955 40 58,10.09.1910
+MALE,Maximilian,Fischer,Seefeldstrasse 17,8604,Kindhausen,052 257 83 60,30.06.1929
+FEMALE,Fanchon,Monjeau,Lungolago 67,6807,Taverne,091 698 42 88,20.01.1994
+FEMALE,Andrea,Fink,Via Muraccio 49,7434,Sufers,081 933 59 65,28.03.1949
+FEMALE,Maddalena,Trentini,Rägetenstrasse 70,8181,Höri,044 215 30 71,31.07.2000
+FEMALE,Claude,Allaire,Lützelflühstrasse 140,8489,Wildberg,052 950 21 34,06.07.1993
+MALE,Kevin,Eggers,Strickstrasse 77,8005,Zürich,043 618 32 14,14.11.1930
+FEMALE,Crescent,Daoust,Lungolago 140,8478,Thalheim an der Thur,052 851 91 56,13.05.1973
+MALE,Andreas,Gruenewald,Spinatsch 55,2545,Moos,032 363 40 67,08.04.1980
+FEMALE,Heike,Metzger,Caltgadira 140,6684,Niva,091 433 76 59,04.04.1951
+FEMALE,Marthe,Beaulac,Valéestrasse 51,7243,Pany,081 544 40 19,12.06.1910
+MALE,Virginio,Rossi,Möhe 31,9545,Jakobstal,071 256 29 68,28.01.1992
+MALE,Januar,Neumann,Valéestrasse 135,6763,Osco,091 875 36 87,24.08.1975
+FEMALE,Debora,Panicucci,Via dalla Staziun 50,1195,Dully,021 753 79 88,20.05.1937
+MALE,Calimero,Longo,Postfach 115,6319,Allenwinden,041 503 77 24,07.12.1901
+FEMALE,Caterina,Milanesi,Via Verbano 47,9107,Urnäsch,071 690 30 51,02.10.1960
+FEMALE,Fayette,Duffet,Plattenstrasse 79,2832,Rebeuvelier,032 669 29 16,24.05.1932
+MALE,Maximilian,Richter,Zürichstrasse 61,1742,Autigny,026 708 44 55,19.07.1982
+MALE,Landolfo,Trevisano,Studhaldenstrasse 6,1923,Les Marécottes,027 665 79 61,08.05.1978
+MALE,Nicolas,Daigneault,Untere Bahnhofstrasse 38,7113,Camuns,081 797 10 73,13.05.1939
+FEMALE,Jessica,Braun,Möhe 128,3063,Ittigen,031 472 23 30,28.04.2000
+FEMALE,Benedetta,Gallo,Jakobstrasse 43,4943,Oeschenbach,062 810 62 40,05.02.1931
+FEMALE,Mara,Zetticci,Via Gabbietta 68,3067,Vechigen,031 969 25 47,26.05.2002
+MALE,Cino,Bruno,Strickstrasse 22,8126,Zumikon,044 344 87 32,09.01.1945
+FEMALE,Esperanza,LeBatelier,Via Altisio 95,2615,Sonvilier,032 205 52 34,30.09.1953
+MALE,Erik,Baumgaertner,Hauptstrasse 84,2874,Montfavergier,032 574 29 38,02.08.1900
+FEMALE,Zara,Couture,Via Altisio 20,6924,Sorengo,091 203 83 10,11.11.1906
+MALE,Courtland,Berger,Piazza Indipendenza 63,1131,Tolochenaz,021 516 24 22,14.07.1952
+MALE,Aleron,Salmons,Damunt 109,5727,Oberkulm,062 238 13 95,31.12.1989
+MALE,Gregorio,Bruno,Via delle Vigne 59,8564,Wagerswil,052 532 88 36,20.11.1985
+MALE,Parfait,Pouchard,Kronwiesenweg 118,8280,Kurzrickenbach,044 568 41 96,01.04.1955
+MALE,Rodrigo,Romano,Dreibündenstrasse 11,7176,Cumpadials,081 707 33 15,10.03.1995
+FEMALE,Raison,Bériault,Lichtmattstrasse 92,3313,Büren zum Hof,032 239 35 40,14.06.1976
+MALE,Valerio,Cocci,Erlenweg 34,9305,Berg,071 722 86 58,18.09.1958
+MALE,Porter,Courcelle,Jakobstrasse 101,6143,Ohmstal,041 556 39 82,24.08.1953
+MALE,Noël,Deniger,In Stierwisen 114,3147,Mittelhäusern,031 748 77 27,02.08.1937
+FEMALE,Ave,Lucchesi,Brunnacherstrasse 123,4315,Zuzgen,049 901 12 28,25.09.2012
+MALE,Marco,Fuerst,Fortunastrasse 124,3762,Erlenbach im Simmental,031 567 89 67,26.01.1951
+MALE,Jules,Royer,Postfach 95,6974,Aldesago,091 624 15 60,05.03.1993
+MALE,Innocenzo,Fallaci,Rägetenstrasse 77,8634,Hombrechtikon,052 575 31 81,13.10.1946
+MALE,Thorsten,Kohler,Auerstrasse 124,6983,Magliaso,091 268 18 96,06.08.1968
+MALE,Abelino,Folliero,Kopfhölzistrasse 27,1014,Lausanne,021 645 86 17,13.04.1973
+MALE,Christien,Grenier,Schulstrasse 118,8633,Wolfhausen,052 527 91 71,18.03.1998
+MALE,Robert,Abend,Kappelergasse 55,5646,Abtwil,062 348 67 63,29.01.1946
+MALE,Ray,Casgrain,Kopfhölzistrasse 100,4415,Lausen,061 357 56 26,02.07.1975
+MALE,Torsten,Abendroth,Püntstrasse 138,5303,Würenlingen,062 727 16 87,03.04.1967
+FEMALE,Deborah,Pisano,Püntstrasse 6,5303,Würenlingen,062 764 58 99,16.08.1960
+MALE,Arnaud,Chartré,Kirchstrasse 26,1283,La Plaine,022 418 53 81,16.11.1944
+FEMALE,Gemma,Lucchese,Plattenstrasse 14,6260,Reiden,041 658 66 47,04.10.1900
+MALE,Kristian,Schmitt,Piazza Rezzonico 121,5232,Villigen,062 505 16 99,14.08.1957
+FEMALE,Elisa,Gallo,Via Vigizzi 3,8472,Unterohringen,052 614 36 86,04.07.1930
+MALE,Felix,Richter,Allmenrüti 109,7212,Seewis im Prättigau,081 748 13 69,13.06.1958
+FEMALE,Anne,Reiniger,Pfaffacherweg 102,9215,Schönenberg,071 231 53 24,09.09.1978
+MALE,Aimone,Calabrese,Lützelflühstrasse 24,9100,Wilen,071 747 94 62,29.12.1940
+MALE,Dario,Calabresi,Wingertweg 112,1323,Envy,021 743 93 60,14.12.2000
+MALE,Christophe,Arpin,Via Pestariso 136,9008,St. Gallen,071 825 19 41,08.01.1994
+MALE,Frank,Burger,Casa Posrclas 23,1646,Echarlens,026 206 86 30,16.10.1950
+FEMALE,Matilde,De Luca,Casa Gielgia 132,8606,Nänikon,052 673 71 84,11.03.1912
+FEMALE,Florence,Dubois,Via Camischolas sura 138,4457,Diegten,061 347 80 38,13.07.1943
+MALE,Bernd,Barth,Brunnenstrasse 50,7603,Roticcio,081 830 44 19,16.07.1980
+FEMALE,Clara,Trentino,Obere Haltenstrasse 52,4571,Lüterkofen,032 547 62 27,28.03.1955
+MALE,Abbondio,Trentini,Avenue d'Ouchy 127,6694,Prato,091 547 12 64,24.06.1980
+MALE,Huon,Poisson,Im Wingert 6,1934,Le Sapey,027 258 87 19,08.10.1995
+MALE,Ernest,Grimard,Mattenstrasse 130,4334,Sisseln,049 937 87 61,24.04.1959
+FEMALE,Aubrey,Loiseau,Mühle 56,3855,Schwanden bei Brienz,033 437 20 62,19.10.1973
+MALE,Gregorio,Dellucci,Landstrasse 79,1189,Saubraz,021 830 60 93,03.11.1910
+MALE,Ireneo,Onio,Schuepisstrasse 137,8554,Hüüsere,052 684 23 21,01.10.1995
+MALE,Benoît,Archambault,Via Schliffras 86,5645,Gärischwil,062 748 98 74,30.10.1953
+FEMALE,Sabine,Baecker,Via Pestariso 85,9127,St. Peterzell,071 668 87 21,25.08.1967
+FEMALE,Blanche,Corbeil,Lichtmattstrasse 90,6463,Bürglen,041 285 95 38,17.12.1937
+FEMALE,Constance,Jacques,Auerstrasse 119,7026,Maladers,081 208 81 73,06.07.1955
+FEMALE,Andrea,Kluge,Rasenstrasse 110,3475,Hermiswil,034 556 41 74,30.10.1968
+FEMALE,Jewel,LaGrande,Kammelenbergstrasse 49,8247,Flurlingen,044 530 25 18,23.09.1983
+MALE,Mike,Koenig,Casa Posrclas 134,5078,Effingen,062 320 65 61,15.02.1960
+FEMALE,Lucilla,Mazzi,Auerstrasse 46,6006,Luzern,041 282 16 33,17.09.1957
+FEMALE,Jolanda ,Endrizzi,Wolfensbergstrasse 123,6356,Rigi Kaltbad,041 450 23 42,31.12.1939
+MALE,Amaranto,Siciliano,Üerklisweg 132,9556,Buch,071 568 24 13,06.04.1980
+FEMALE,Brigitte,Maurer,In Stierwisen 134,8636,Mettlen,052 310 67 79,19.10.1960
+FEMALE,Michelle,Bachmeier,Hasenbühlstrasse 13,8493,Blitterswil,052 642 21 36,09.03.1990
+FEMALE,Augusta,Manfrin,Werkstrasse 45,1436,Chamblon,024 517 42 80,11.10.1941
+MALE,Philipp,Hertz,Seefeldstrasse 91,7252,Klosters Dorf,081 712 79 34,11.02.1942
+FEMALE,Priscilla,Russo,Via Vigizzi 96,8636,Unterbach,052 372 15 14,12.10.1965
+MALE,Ulrich,Kunze,Rosenweg 143,8903,Landikon,044 258 92 49,07.10.1945
+MALE,Quintino,Pagnotto,Piazza Rezzonico 68,1844,Villeneuve,024 712 97 90,23.05.1991
+FEMALE,Jana,Bach,Vallerstrasse 13,8330,Pfäffikon,044 729 89 64,27.06.1933
+MALE,Marc,Sorel,Obere Haltenstrasse 69,4937,Lünschberg,062 747 65 54,24.01.2001
+MALE,Gaspar,Leroy,Bahnhofplatz 149,5224,Altstalden,062 362 29 72,11.10.1906
+FEMALE,Simone,Schmitt,Pfaffacherweg 138,8585,Schönenbaumgarten,052 305 43 84,28.11.1980
+MALE,Sebastian,Friedman,Mülhauserstrasse 117,8877,Murg,055 896 83 98,05.11.1965
+MALE,Italo,Onio,Via Verbano 108,7535,Valchava,081 281 51 94,11.06.1984
+MALE,Dario,Marcelo,Wolfensbergstrasse 22,6410,Rigi Klösterli,041 538 38 71,16.10.1971
+MALE,Leardo,Trevisano,Schuetzenweg 33,5400,Meierhof,056 234 74 42,02.01.1936
+FEMALE,Vanessa,Faerber,Gartenhof 55,7546,Ardez,081 570 10 51,22.08.1985
+FEMALE,Yvonne,Aachen,In Stierwisen 57,1031,Mex,021 885 62 18,03.10.1946
+MALE,Faustin,Guernon,Sonnenweg 99,9548,Matzingen,071 526 10 84,04.02.1944
+FEMALE,Anna,Lettiere,Kirchstrasse 41,2314,La Sagne,032 424 29 82,02.11.1949
+FEMALE,Ines,Saenger,Spinatsch 59,1675,Mossel,026 935 71 86,27.07.1980
+MALE,Niklas,Grunwald,Via Pestariso 91,7028,St. Peter,081 513 65 32,06.06.1951
+MALE,Forrest,Chalifour,Kirchstrasse 35,1944,La Fouly,027 422 57 16,18.03.2005
+MALE,Maximilian,Frey,Via Verbano 29,8740,Uznach,044 326 84 55,14.04.1977
+MALE,Generoso,Napolitani,Piazza Rezzonico 121,5234,Villigen,062 377 86 58,24.12.1980
+FEMALE,Nicoletta,Moretti,Wiesenstrasse 96,4040,Basel,061 439 44 90,01.05.1975
+MALE,Pierre,Bois,Clius 84,5728,Oberdorf,062 734 17 58,09.02.1980
+FEMALE,Ines,Cole,Sonnenbergstr 86,7165,Breil/Brigels,081 425 65 66,19.04.1953
+FEMALE,Johanna,Shuster,Untere Bahnhofstrasse 70,6837,Caneggio,091 842 97 48,26.07.1975
+FEMALE,Lotye,Ruest,Brucknerweg 6,5634,Hagnau,062 934 73 82,10.06.1948
+MALE,Russell,Compagnon,Jakobstrasse 48,2889,Ocourt,032 569 48 26,05.08.1959
+MALE,Marcel,Schwartz,Im Sandbüel 92,3714,Frutigen,031 330 98 25,26.02.2013
+FEMALE,Dalia,Gallo,Schuepisstrasse 65,9515,Hosenruck,071 816 38 98,29.10.1955
+MALE,Daniel,Deblois,Allmenrüti 71,8185,Seeb,044 693 38 45,29.05.1983
+FEMALE,Jana,Daecher,Kronwiesenweg 53,2406,La Brévine,032 309 38 57,06.05.1904
+MALE,Nicolas,Champagne,Clius 134,4436,Oberdorf,061 349 70 30,27.05.1950
+MALE,Crescente,Trevisano,Bösch 135,2608,Courtelary,032 979 15 73,20.07.1945
+MALE,Didier,Des Meaux,Auerstrasse 46,1963,Magnot,027 491 44 67,04.09.1937
+FEMALE,Sabine,Mayer,Valéestrasse 84,8626,Ottikon,052 776 52 52,27.01.1929
+FEMALE,Odetta ,Piazza,Via Stauffacher 132,7147,Vignogn,081 375 23 71,13.08.2003
+FEMALE,Adèle,Pomerleau,Brucknerweg 55,8522,Häuslenen,052 705 52 99,10.03.1913
+MALE,Max,Freeh,Rasenstrasse 68,6345,Hinterburg,041 374 24 54,14.08.1937
+MALE,Livio,Pisani,Pfaffacherweg 4,5246,Scherz,062 704 18 32,07.03.1913
+FEMALE,Clarice,Tollmache,Glennerstrasse 77,6745,Giornico,091 348 85 60,17.06.1966
+FEMALE,Geronima,Lori,Via Albarelle 45,6422,Steinen,041 981 72 44,21.05.1928
+FEMALE,Karolin,Schulze,Erlenweg 114,3001,Bern,031 604 67 53,20.07.1962
+MALE,Bruno,Sabbatini,Püntstrasse 81,4564,Zielebach,032 955 70 33,21.09.1982
+FEMALE,Franca,Fanucci,Kappelergasse 108,2558,Aegerten,032 347 89 42,13.05.1998
+MALE,René,Maier,Boldistrasse 52,5432,Neuenhof,056 890 32 61,14.10.1958
+MALE,Sidney,Aupry,Via Verbano 11,7122,Valendas,081 897 86 74,30.01.1954
+FEMALE,Céline,Sciverit,Mattenstrasse 16,5703,Seon,062 834 31 77,06.07.1981
+MALE,Andreas,Wannemaker,Via Stauffacher 50,1515,Villars-le-Comte,021 447 60 96,12.09.1998
+MALE,Courtland,Lamour,Mittlerer Thalackerweg 62,1542,Rueyres-les-Prés,021 278 82 18,03.02.1997
+FEMALE,Lidia,Lombardo,Binzmühlestrasse 22,9465,Salez,071 270 21 51,09.09.1971
+MALE,Amerigo,Piazza,Mittlerer Thalackerweg 131,4539,Rumisberg,032 771 20 57,26.06.1944
+MALE,Simone,Bergamaschi,Wiesenstrasse 25,3552,Bärau,035 933 98 57,24.01.1932
+FEMALE,Juliane,Richter,Postfach 109,1304,Allens,021 332 45 51,11.05.1968
+MALE,Erik,Zimmermann,Piazza Rezzonico 115,8474,Vorder Grüt,052 333 18 25,11.08.1932
+FEMALE,Clara,Mancini,Via Camischolas sura 50,2800,Delémont,032 765 23 10,15.08.1956
+MALE,Felix,Holtzmann,Piazza Indipendenza 33,1748,Torny-le-Grand,026 558 86 32,01.08.1908
+MALE,Uranio,Lombardi,Spinatsch 101,8580,Mühlebach,052 986 65 71,14.10.1988
+FEMALE,Lena,Baumgaertner,Sondanella 138,9036,Grub,071 893 46 13,11.10.1978
+FEMALE,Sarah,Faerber,Im Wingert 85,1474,Le Moulin,024 748 43 97,25.10.1949
+FEMALE,Petra,Schmid,Via Luzzas 77,4532,Feldbrunnen-St. Niklaus,032 922 52 23,18.01.1993
+FEMALE,Anna,Schulze,Rosenweg 123,1287,Laconnex,022 384 72 78,17.05.1948
+MALE,Mike,Gottlieb,Bergrain 29,1316,Chevilly,021 997 92 60,02.01.1938
+FEMALE,Céline,Lagueux,Via Albarelle 138,7459,Stierva,081 458 12 68,03.03.1949
+MALE,Emidio,Baresi,Breitenstrasse 96,4083,Basel,061 257 20 99,26.10.2003
+FEMALE,Clizia,Sagese,Postfach 94,8494,Alt Landenberg,052 865 27 19,17.03.1943
+MALE,Hugh,Brian,Lichtmattstrasse 58,8570,Burg,052 567 34 58,24.02.1994
+FEMALE,Gabriele,Luft,Lichtmattstrasse 69,4922,Bützberg,062 445 36 58,01.03.1945
+FEMALE,Catena,Barese,Obere Bahnhofstrasse 112,6500,Bellinzona,091 734 43 61,09.12.1978
+FEMALE,Lisa,Bayer,Strickstrasse 82,6303,Zug,041 359 61 22,29.03.2012
+FEMALE,Prisca,Davide,Clius 99,8574,Oberhofen,052 816 98 41,19.05.1960
+MALE,Cirillo,Rossi,Kronwiesenweg 120,6217,Kottwil,041 884 15 14,02.08.1958
+MALE,Rodrigo,Ferrari,Postfach 14,8105,Altburg,044 517 67 42,30.06.1931
+FEMALE,Viviana,Manfrin,Höhenweg 98,9216,Heldswil,071 876 77 11,18.11.1932
+FEMALE,Martina,Maier,Quadra 8,5615,Fahrwangen,062 897 34 42,07.10.1937
+FEMALE,Nadine,Brunelle,Sondanella 118,6611,Gresso,091 910 46 52,09.02.1987
+MALE,Orville,Roux,Hasenbühlstrasse 24,8496,Boden,052 297 80 49,24.01.1944
+FEMALE,Agostina,Calabrese,Auerstrasse 139,1963,Magnot,027 813 89 10,01.01.1976
+FEMALE,Geronima,Russo,Via Schliffras 15,6123,Geiss,041 744 38 67,24.10.1989
+MALE,Marlon,Gaillard,Semperweg 27,3717,Blausee-Mitholz,031 266 74 47,22.06.2010
+MALE,Oliviero,Mazzanti,Lichtmattstrasse 131,3664,Burgistein Station,033 785 62 89,27.04.1995
+FEMALE,Azura,Blais,Bahnhofplatz 93,6286,Altwis,041 206 72 49,20.06.1956
+FEMALE,Valérie,Harquin,Möhe 17,1656,Im Fang,026 560 65 63,03.08.1912
+FEMALE,Heike,Schmitz,Püntstrasse 114,4800,Zofingen,062 765 45 93,01.01.1950
+MALE,Lucas,Paquin,Damunt 98,3038,Oberlindach,031 227 74 59,09.08.1912
+MALE,Patrick,Hahn,Semperweg 67,8636,Blattenbach,052 237 46 14,31.07.1948
+FEMALE,Caroline,Denis,Mühle 12,6440,Schränggigen,041 453 29 44,06.07.1993
+MALE,Roslyn,Langlois,Mattenstrasse 117,4450,Sissach,061 938 58 43,28.02.1968
+FEMALE,Tarquinia,Bergamaschi,Kirchstrasse 127,1093,La Conversion,021 416 86 75,04.10.1976
+MALE,Oreste,Lettiere,Strickstrasse 147,8027,Zürich,043 616 47 58,21.09.1960
+MALE,Norris,Desaulniers,Via dalla Staziun 118,6418,Dritte Altmatt,041 683 61 46,23.04.1987
+FEMALE,Laura,Duerr,Breitenstrasse 79,4070,Basel,061 439 74 68,06.10.1928
+FEMALE,Claudia,Biermann,Via Camischolas sura 109,4457,Diegten,061 802 86 77,14.01.2012
+MALE,Learco,Trevisan,Via Franscini 36,7203,Trimmis,081 829 49 96,21.12.1928
+MALE,Mandel,Salmons,Bösch 92,1941,Cries,027 993 64 76,13.12.1929
+MALE,Ermes,Cocci,Quadra 87,3154,Eywald,031 704 34 48,29.11.1994
+MALE,Michael,Trommler,Möhe 63,8335,Isikon,044 490 66 30,03.12.1988
+MALE,Tobias,Baumgartner,Via Gabbietta 55,7213,Valzeina,081 994 85 30,11.09.1967
+MALE,Franco,Padovesi,Via Camischolas sura 3,3036,Detligen,031 436 20 51,03.06.1968
+FEMALE,Marveille,Beaulé,Werkstrasse 121,3285,Charmey Lac,032 815 32 96,20.06.1985
+MALE,Klaus,Wirtz,Mattenstrasse 44,1077,Servion,021 286 39 33,12.10.1992
+MALE,Manfredo,Zetticci,Bahnhofplatz 136,9450,Altstätten,071 368 67 29,24.10.1999
+MALE,Learco,Marchesi,Mittlerer Thalackerweg 44,5644,Rüstenschwil,062 500 46 25,13.03.1934
+MALE,Paride,Bianchi,Via Stazione 21,5603,Staufen,062 211 22 11,17.08.1949
+FEMALE,Kathrin,Cole,Tösstalstrasse 114,6084,Wasserwendi,041 713 76 41,18.09.1984
+FEMALE,Berangaria,Lessard,Avenue d'Ouchy 58,1947,Prarreyer,027 513 88 66,19.05.1955
+MALE,Isaac,Boncoeur,Zürichstrasse 112,6342,Baar,041 789 98 67,13.05.1950
+FEMALE,Ines,Napolitani,Kammelenbergstrasse 89,3978,Flanthey,027 919 43 11,15.09.1948
+MALE,Luca,Kuefer,Herrenberg 104,2515,Prêles,032 847 98 34,03.12.1949
+FEMALE,Rosita,Iadanza,Möhe 103,2563,Ipsach,032 403 23 93,18.09.1979
+MALE,Massimo,Capon,Piazza Indipendenza 109,3600,Thun,033 647 29 45,13.08.1976
+FEMALE,Brigitte,Labrie,Boldistrasse 110,4626,Niederbuchsiten,062 678 32 18,14.07.1938
+FEMALE,Danielle,Sevier,Mattenstrasse 18,4334,Sisseln,049 319 56 30,06.01.1913
+FEMALE,Katrin,Saenger,Via Albarelle 26,3148,Steinenbrünnen,031 385 51 54,10.12.1939
+FEMALE,Pasqualina,Padovesi,Im Sandbüel 80,8500,Frauenfeld,052 754 41 81,19.03.1936
+FEMALE,Anja,Schröder,Via Schliffras 70,6123,Geiss,041 853 85 52,08.02.1978
+FEMALE,Kristin,Ritter,Landstrasse 119,1189,Saubraz,021 363 45 14,14.01.1984
+FEMALE,Lavinia,Endrizzi,Via Vigizzi 55,6153,Ufhusen,041 849 74 55,13.01.1971
+FEMALE,Fifine,Cinq-Mars,Binzmühlestrasse 87,6592,Sant'Antonino,091 631 46 34,16.05.2000
+MALE,Lorenzo,Piazza,Mühle 61,3465,Schoren bei Thun,034 762 79 90,26.10.1939
+MALE,Étienne,Busque,Loorenstrasse 35,1239,Collex-Bossy,022 755 97 58,27.01.1955
+MALE,Marlon,Echeverri,Obere Haltenstrasse 115,6951,Lugano,091 431 80 10,04.08.1902
+MALE,Giorgio,Manfrin,Breitenstrasse 41,4078,Basel,061 324 85 62,07.10.1954
+MALE,Frédéric,Abril,Lungolago 92,8898,Tannenbodenalp,055 518 53 63,20.04.1976
+FEMALE,Diana,Frueh,Rasenstrasse 122,3360,Herzogenbuchsee,032 842 52 37,06.07.1972
+FEMALE,Diane,Petrie,Mattenstrasse 133,5301,Siggenthal Station,062 332 20 66,07.05.1971
+FEMALE,Colomba,Boni,Via Stauffacher 31,1945,Vichères,027 593 98 94,17.12.1986
+MALE,Camillo,Cattaneo,Binzmühlestrasse 147,1913,Saillon,027 524 29 29,17.02.1953
+MALE,Lukas,Dietrich,Via Schliffras 65,3860,Geissholz,033 328 79 80,02.11.1953
+FEMALE,Tanja,Luft,Wingertweg 105,1731,Ependes,026 892 47 10,26.03.1932
+FEMALE,Madelene,Vachon,Brunnenstrasse 137,3437,Rüderswil,034 886 86 85,09.05.1909
+FEMALE,Alba,Colombo,Lützelflühstrasse 39,3812,Wilderswil,033 874 71 23,10.10.1946
+FEMALE,Valentine,Panetier,Via Pestariso 92,7500,St. Moritz,081 236 44 16,22.03.1943
+MALE,Ottone,Manna,Binzmühlestrasse 69,3910,Saas Grund,027 794 18 15,10.02.1984
+MALE,Verney,Piedalue,Bahnhofstrasse 85,3999,Gletsch,027 995 70 62,10.05.1913
+FEMALE,Adalberta,Napolitani,Schulstrasse 69,4634,Wisen,062 222 25 56,14.05.1940
+MALE,Stéphane,Aupry,Rasenstrasse 11,3032,Hinterkappelen,031 571 61 92,01.05.1953
+MALE,Jürgen,Weiss,Brucknerweg 97,4624,Härkingen,062 557 97 44,01.06.1900
+FEMALE,Clothilde,Boileau,Dreibündenstrasse 137,7176,Cumpadials,081 267 67 20,20.02.1960
+FEMALE,Claire,Gaulin,Neubertbogen 143,4938,Rohrbach,062 883 89 10,15.10.1949
+FEMALE,Anja,Koertig,Via Franscini 81,3083,Trimstein,031 239 15 73,17.01.2010
+MALE,Émile,Villeneuve,Obere Bahnhofstrasse 10,1656,Bellegarde,026 477 94 14,09.05.1911
+FEMALE,Dalila,Costa,Mattenstrasse 9,6867,Serpiano,091 935 82 58,03.02.1975
+MALE,Wolfgang,Bieber,Tösstalstrasse 148,8330,Wallikon,044 960 45 92,09.05.1912
+MALE,Edilio,Ferri,Im Wingert 57,5426,Lengnau,056 501 46 44,12.04.1981
+FEMALE,Annett,Wagner,Avenue d'Ouchy 24,1716,Plaffeien,026 880 92 84,18.04.1954
+FEMALE,Leah,Brauer,Langwiesstrasse 100,7326,Weisstannen,081 710 28 12,09.09.1929
+FEMALE,Scolastica,Manfrin,Stradun 50,8310,Grafstal,044 268 79 27,16.03.1968
+FEMALE,Sabrina,Monaldo,Studhaldenstrasse 102,1220,Les Avanchets,022 873 80 55,21.09.1973
+FEMALE,Manon,Plourde,Spinatsch 35,5054,Moosleerau,062 623 95 24,26.03.1962
+FEMALE,Luana,Lombardi,Kappelergasse 135,9315,Aerdhuuse,071 496 18 31,16.02.1987
+FEMALE,Rufina,Trevisano,Im Sandbüel 118,1708,Fribourg,026 232 74 54,15.01.1999
+MALE,Fletcher,Henrichon,Erlenweg 12,3050,Bern,031 445 59 24,11.06.1966
+MALE,Thomas,Austerlitz,Via Altisio 79,2864,Soulce,032 927 43 58,13.11.1932
+FEMALE,Yvonne,Freud,Bösch 25,1263,Crassier,022 755 23 88,06.04.1906
+MALE,Matteo,Lucchesi,Studhaldenstrasse 59,1862,Les Mosses,024 646 65 97,11.11.1979
+MALE,Benjamin,Loewe,Casut 81,3097,Liebefeld,031 943 80 79,18.08.1960
+MALE,Matthias,Hahn,Spinatsch 60,2037,Montmollin,032 385 58 56,19.07.1994
+FEMALE,Liane,Arpin,Via Luzzas 21,1925,Finhaut,027 925 62 64,19.04.1967
+FEMALE,Cécile,Chalut,Strickstrasse 148,6305,Zug,041 732 63 50,25.06.1953
+FEMALE,Teresa,Napolitano,Dreibündenstrasse 66,7270,Davos Platz,081 951 15 14,05.08.1947
+MALE,Royden,Quessy,Brunnacherstrasse 106,3815,Zweilütschinen,033 770 25 61,15.07.1994
+MALE,Jens,Faber,Dreibündenstrasse 32,7184,Curaglia,081 670 37 92,15.02.1988
+FEMALE,Clementine,Chaussée,Grossmatt 4,8892,Berschis,055 880 63 79,18.07.1994
+FEMALE,Donatella,Lo Duca,Piazza Indipendenza 38,1538,Treytorrens,021 693 51 77,03.10.1946
+MALE,Franck,Leroy,Forrenböhlstrasse 131,8523,Kappel,052 828 65 99,22.02.2009
+FEMALE,Amelia,Udinesi,In Stierwisen 149,3665,Mettlen,033 760 90 84,28.09.1972
+MALE,Garland,Croquetaigne,Piazza Indipendenza 74,1552,Trey,021 944 77 70,27.01.1945
+MALE,Philip,Reault,Bahnhofplatz 135,8573,Alterswilen,052 210 42 25,25.10.1933
+FEMALE,Sara,Luft,Lungolago 45,2075,Thielle-Wavre,032 598 40 84,09.06.1968
+MALE,Eric,Gerber,Spinatsch 10,4922,Moos,062 710 10 14,19.08.1962
+MALE,Dieter,Schroder,Untere Bahnhofstrasse 93,7027,Castiel,081 395 87 66,23.02.1993
+MALE,Dante,Lorenzo,Hauptstrasse 125,1174,Montherod,021 274 12 96,21.11.1971
+FEMALE,Kathrin,Fried,Möhe 95,1656,Im Fang,026 358 82 59,16.02.2005
+FEMALE,Patrice,Lapointe,Breitenstrasse 105,4094,Basel,061 318 42 29,10.02.1985
+MALE,Fedro,Sabbatini,Via Gabbietta 31,7104,Versam,081 713 42 60,27.07.1982
+FEMALE,Claire,Garreau,Via Stazione 87,9422,Staad,071 820 28 80,18.09.2000
+FEMALE,Dorene,Daviau,Schulstrasse 19,5610,Wohlen,062 720 68 60,18.07.1975
+MALE,René,Freitag,Casa Gielgia 117,9650,Nesslau,071 693 14 85,02.06.1950
+MALE,Tobias,Blau,Lützelflühstrasse 17,3428,Wiler bei Utzenstorf,034 754 11 75,21.01.1956
+FEMALE,Roberta,Folliero,Püntstrasse 116,4923,Wynau,062 259 11 65,09.08.1997
+FEMALE,Clio,Sagese,Werkstrasse 76,1971,Champlan,027 857 77 93,16.10.1955
+FEMALE,Demetria,Trevisan,Üerklisweg 50,1719,Brünisried,026 840 98 55,02.08.1989
+MALE,Dominik,Schröder,Wolfensbergstrasse 38,6410,Rigi Kulm,041 235 74 57,25.11.1930
+MALE,Albertino,Udinese,Quadra 35,1163,Etoy,021 225 87 27,02.12.1960
+FEMALE,Daniela,Eggers,Loorenstrasse 93,1868,Collombey-Muraz,024 566 83 68,05.07.1977
+FEMALE,Marina,Davide,Brunnacherstrasse 96,8079,Zürich,043 325 63 93,28.02.2006
+MALE,Frank,Friedmann,Pfaffacherweg 56,8840,Schnabelsberg,055 776 18 92,16.02.1973
+FEMALE,Diane,Plouffe,Im Wingert 84,5426,Lengnau,056 939 64 37,21.04.1955
+FEMALE,Ninette,Fontaine,Untere Bahnhofstrasse 9,6503,Carasso,091 668 44 99,01.12.1968
+FEMALE,Vanessa,Pabst,Gartenhof 79,6822,Arogno,091 202 26 32,24.12.2007
+MALE,Marko,Schweizer,Jakobstrasse 87,8309,Oberwil,044 760 48 15,01.02.1942
+MALE,Florismart,Sauvé,Rägetenstrasse 15,8507,Hörhausen,052 991 41 42,24.10.1974
+FEMALE,Vedette,Giroux,Caltgadira 69,6915,Noranco,091 516 60 95,11.03.1951
+FEMALE,Kathrin,Loewe,Via Muraccio 75,3111,Tägertschi,031 831 65 67,05.04.1950
+FEMALE,Joséphine,Coupart,Boldistrasse 119,9249,Niederstetten,071 503 34 58,12.10.1945
+MALE,Daniel,Pfeifer,Auerstrasse 121,7208,Malans,081 999 32 88,20.05.1967
+FEMALE,Barbara,Schiffer,Studhaldenstrasse 26,1984,Les Haudères,027 923 44 53,26.03.1990
+MALE,Parfait,Arnoux,Via delle Vigne 16,1696,Vuisternens-en-Ogoz,026 679 34 43,27.10.2004
+FEMALE,Antje,Werner,Üerklisweg 75,7084,Brienz/Brinzauls,081 209 71 70,15.08.1949
+MALE,René,Busson,Casut 145,3954,Leukerbad,027 644 21 96,02.12.1943
+MALE,Steffen,Papst,Allmenrüti 74,1525,Seigneux,021 236 80 97,15.04.1930
+FEMALE,Lelia,Zetticci,Pfaffacherweg 59,9054,Schlatt-Haslen,071 598 31 47,13.06.1961
+FEMALE,Iole,Pisano,Vallerstrasse 31,6744,Personico,091 588 85 90,07.01.1989
+FEMALE,Frida,Pisano,Sonnenbergstr 112,1683,Brenles,026 368 41 50,31.07.1947
+MALE,Jonas,Frankfurter,Studhaldenstrasse 121,2325,Les Planchettes,032 274 45 37,21.11.1933
+MALE,Didier,Guay,Untere Bahnhofstrasse 93,7126,Castrisch,081 298 33 22,10.08.1913
+FEMALE,Kristin,Fischer,Sondanella 123,1772,Guéravet,026 549 11 51,24.10.1995
+FEMALE,Katja,Baumgaertner,Höhenweg 17,8535,Herdern,052 532 38 90,08.10.1966
+FEMALE,Eulalia,Rossi,Via Camischolas sura 37,3264,Diessbach bei Büren,032 249 26 53,20.12.1997
+MALE,Guglielmo,Pinto,Kopfhölzistrasse 100,1003,Lausanne,021 619 37 43,03.11.1935
+FEMALE,Arienne,Lemieux,Semperweg 74,8627,Binzikon,052 440 78 94,19.05.1941
+MALE,Lukas,Ehrlichmann,Erlenweg 40,3185,Berg,031 818 67 79,30.07.2000
+FEMALE,Mirella,Lori,Wiesenstrasse 134,3065,Bantigen,031 645 74 77,09.02.1948
+FEMALE,Katrin,Brauer,Bösch 116,2746,Crémines,032 771 45 44,11.10.1903
+FEMALE,Zurie,Lapresse,Mittlerer Thalackerweg 119,3908,Saas Balen,027 810 50 94,15.06.1967
+MALE,Jacques,Laforest,Damunt 13,5452,Oberrohrdorf,056 799 53 78,03.08.1986
+MALE,Albino,Beneventi,Scheidweg 116,8507,Gündelhart,052 606 23 31,17.06.2009
+MALE,Albino,Romano,Sonnenbergstr 17,8784,Braunwald,044 940 50 60,16.01.1984
+FEMALE,Rachelle,Givry,Postfach 31,3205,Allenlüften,032 315 63 17,15.05.1974
+MALE,Bernardo,Nucci,Scheidweg 1,1251,Gy,022 990 96 88,01.06.1996
+FEMALE,Isabelle,Lajeunesse,Seefeldstrasse 2,8604,Kindhausen,052 322 12 68,18.07.1956
+FEMALE,Leonie,Duerr,Sondanella 137,3933,Gspon,027 221 47 79,24.03.1963
+MALE,Jörg,Hirsch,Kappelergasse 140,3715,Adelboden,031 695 79 78,09.02.1995
+FEMALE,Johanna,Fruehauf,Grossmatt 47,5627,Besenbüren,062 697 38 74,12.03.1987
+MALE,Donato,Arcuri,Via Muraccio 135,2882,St-Ursanne,032 919 89 89,22.09.1932
+MALE,Bernd,Scherer,Via delle Vigne 47,1633,Vuippens,026 463 68 51,16.04.1981
+MALE,Ermes,Monaldo,Via Muraccio 12,8274,Tägerwilen,044 259 22 11,01.07.1974
+MALE,Tom,Moench,Caltgadira 143,1431,Novalles,024 472 86 50,18.11.1951
+MALE,David,Margand,Untere Aegerten 112,6646,Contra,091 508 36 72,08.02.1975
+MALE,Ippolito,Barese,Casa Gielgia 95,1973,Nax,027 273 73 17,25.10.1960
+MALE,Kevin,Berg,Werkstrasse 14,6690,Cavergno,091 331 80 14,28.03.1998
+FEMALE,Pascaline,Roux,Betburweg 145,1522,Lucens,021 775 47 80,19.12.1984
+FEMALE,Nicla,Siciliani,Neubertbogen 34,5032,Rohr,062 829 25 19,17.11.1999
+FEMALE,Delmare,Sorel,Betburweg 111,5304,Loohof,062 348 38 96,17.07.1973
+FEMALE,Coralie,Saurel,Allmenrüti 49,3662,Seftigen,033 355 87 16,04.01.1944
+MALE,Vincenzo,Udinese,Via Albarelle 2,6433,Stoos,041 961 96 75,29.02.1960
+FEMALE,Crescent,CinqMars,Brunnacherstrasse 64,8030,Zürich,043 226 58 93,07.06.1987
+MALE,Anton,Course,Breitenstrasse 90,4084,Basel,061 744 54 16,10.01.1952
+FEMALE,Violante,Onio,Schuetzenweg 43,4233,Meltingen,061 971 35 74,06.12.1944
+MALE,Charlot,Labbé,Seefeldstrasse 65,8573,Kemmental,052 841 90 79,29.10.2009
+FEMALE,Katja,Faerber,Breitenstrasse 142,4057,Basel,061 409 23 29,05.02.1903
+FEMALE,Sophia,Urner,Hauptstrasse 144,2857,Montavon,032 634 37 31,27.02.1977
+FEMALE,Nicole,Leclerc,Via Gabbietta 93,7317,Valens,081 953 77 25,23.11.1932
+FEMALE,Ada,Fiorentini,Brunnenstrasse 19,6760,Rossura,091 800 72 58,01.10.1940
+FEMALE,Annett,Weisz,Damunt 98,8472,Oberohringen,052 552 41 60,08.11.1956
+FEMALE,Parnella,Jomphe,Via Camischolas sura 1,8157,Dielsdorf,044 445 89 44,12.10.1971
+FEMALE,Sabina ,Calabresi,Valéestrasse 25,1413,Oppens,024 969 90 57,01.06.1964
+FEMALE,Ursula,Köhler,Obere Bahnhofstrasse 89,1446,Baulmes,024 354 27 96,22.12.1999
+MALE,Florian,Dietrich,Via Vigizzi 115,3988,Ulrichen,027 796 74 57,12.10.1985
+MALE,Aymon,Sevier,Wolfensbergstrasse 129,3418,Rinderbach,034 629 76 36,25.09.1957
+FEMALE,Ambrosia,Buccho,Untere Bahnhofstrasse 17,7027,Castiel,081 717 21 62,04.06.1935
+FEMALE,Paige,Grignon,Piazza Indipendenza 96,3603,Thun,033 585 73 86,27.07.1930
+FEMALE,Aimée,Dubois,Rasenstrasse 43,8636,Hittenberg,052 858 10 41,19.01.1937
+FEMALE,Marveille,Hébert,Landstrasse 105,7202,Says,081 930 35 45,17.05.1992
+FEMALE,Flaviana,Li Fonti,Clius 145,5073,Oberfrick,062 984 73 36,05.09.1991
+MALE,Luca,Lo Duca,Herrenberg 107,1746,Prez-vers-Noréaz,026 290 79 55,23.11.1948
+FEMALE,Michelle,Nagel,Mülhauserstrasse 86,3233,Mullen,032 314 46 34,13.11.1974
+MALE,Giorgio,Trevisano,Pfaffacherweg 99,8495,Schmidrüti,052 282 76 78,11.12.1935
+FEMALE,Katrin,Konig,Lungolago 71,5617,Tennwil,062 691 14 76,25.09.2008
+MALE,Ralf,Lange,Damunt 14,6438,Oberschönenbuch,041 289 30 97,05.02.1987
+MALE,Steffen,Weiss,Studhaldenstrasse 13,1723,Les Rites,026 620 68 48,03.11.1944
+FEMALE,Angelika,Schreiber,Caltgadira 84,8855,Nuolen,055 529 44 80,22.12.1999
+MALE,Sebastian,Dresner,Bahnhofstrasse 52,1407,Gossens,024 208 36 47,23.09.1934
+MALE,Alfonsino,Pagnotto,Via Vigizzi 59,8217,Unterneuhaus,044 822 41 98,27.08.1996
+MALE,Gianetto,Rossi,Schuepisstrasse 130,8640,Hurden,052 370 18 35,05.08.1904
+MALE,Tobias,Kastner,Auerstrasse 40,9556,Maltbach,071 830 49 64,26.08.1932
+FEMALE,Geraldina,Fallaci,Wiesenstrasse 38,3303,Ballmoos,032 872 62 10,20.12.1960
+FEMALE,Daniela,Sabbatini,Seefeldstrasse 69,4703,Kestenholz,078 615 99 67,09.06.1942
+MALE,Letterio,Lombardo,Schuetzenweg 47,6122,Menznau,041 269 86 47,07.03.1956
+FEMALE,Lina,Buccho,Via Pestariso 17,9011,St. Gallen,071 582 80 59,20.11.1974
+MALE,Giosuè,Marino,Via Albarelle 144,1025,St-Sulpice,021 968 88 77,06.02.1993
+FEMALE,Leala,Vachon,Kirchstrasse 36,1937,La Douay,027 656 78 59,07.09.1944
+MALE,Placido,Pagnotto,Möhe 64,6434,Illgau,041 347 88 96,08.12.1911
+MALE,Carisio,Padovesi,Kronwiesenweg 94,1902,La Balmaz,027 583 14 12,04.08.1967
+FEMALE,Pascaline,Margand,Avenue d'Ouchy 24,6742,Pollegio,091 547 38 14,12.10.1999
+MALE,Nestore,Fallaci,Via Stauffacher 82,1694,Villargiroud,026 747 61 69,06.10.1960
+FEMALE,Cirilla,Marchesi,Brucknerweg 60,3463,Häusernmoos,034 482 44 38,18.09.1946
+FEMALE,Dina,Trentini,Betburweg 98,4514,Lommiswil,032 820 91 65,27.09.1936
+MALE,Xarles,Bonnet,Casa Posrclas 43,1612,Ecoteaux,026 571 31 39,07.04.1938
+FEMALE,Océane,Lachance,Auerstrasse 45,2532,Magglingen,032 369 30 16,02.11.1954
+MALE,Philipp,Weber,Binzmühlestrasse 144,3115,Sädel,031 618 64 37,16.11.2005
+MALE,Fitz,Sorel,Erlenweg 67,8222,Beringen,044 816 19 62,08.01.1934
+MALE,Leopoldo,Fiorentino,Kammelenbergstrasse 31,5467,Fisibach,056 673 35 41,20.03.1945
+FEMALE,Eugenia,Dellucci,Via Verbano 108,7427,Urmein,081 445 51 18,21.12.1998
+FEMALE,Ornella,Giordano,Sondanella 44,1663,Greyerz,026 529 17 83,22.07.1948
+MALE,Savino,Piccio,Binzmühlestrasse 12,6534,San Vittore,091 341 47 96,11.02.1996
+FEMALE,Emmeline,Lemaître,Plattenstrasse 150,8640,Rapperswil,052 288 26 52,13.10.1958
+FEMALE,Berangaria,Gladu,Bösch 10,1404,Cuarny,024 819 50 74,04.02.1934
+FEMALE,Avice,Angélil,Bahnhofplatz 98,1972,Anzère,027 285 34 50,01.04.1972
+MALE,Adelmio,Mazzanti,Hauptstrasse 47,2875,Montfaucon,032 904 20 36,15.06.1952
+FEMALE,Ursula,Zimmerman,Boldistrasse 38,3504,Niederhünigen,035 982 22 53,31.10.2007
+MALE,Kristian,Schröder,Via Stazione 111,8260,Stein am Rhein,044 859 31 65,16.07.1990
+FEMALE,Melanie,Neustadt,Via Luzzas 107,3784,Feutersoey,031 364 79 83,25.01.1967
+MALE,Max,Beyer,Binzmühlestrasse 48,3115,Sädel,031 639 24 41,16.09.2007
+FEMALE,Corinne,Villeneuve,Via Albarelle 47,8542,Steinegg,052 215 67 41,22.01.1944
+MALE,Gastone,DeRose,Dreibündenstrasse 97,2914,Damvant,032 909 75 54,16.05.1931
+FEMALE,Anselma,Calabrese,Valéestrasse 19,6657,Palagnedra,091 276 11 55,13.04.1976
+FEMALE,Tanja,Fischer,Via dalla Staziun 56,5605,Dottikon,062 601 23 83,06.11.1988
+FEMALE,Antje,Daecher,Clius 109,4515,Oberdorf,032 983 11 55,03.06.1972
+MALE,Quintiliano,Toscani,Via delle Vigne 125,3802,Waldegg,033 876 69 67,17.06.1944
+MALE,Marko,Bayer,Via dalla Staziun 100,8635,Dürnten,052 254 39 44,22.04.2000
+MALE,René,Gottlieb,Auerstrasse 24,7523,Madulain,081 491 31 10,26.04.1969
+FEMALE,Charmaine,L'Hiver,Sonnenweg 51,8560,Märstetten,052 980 69 56,26.04.1963
+FEMALE,Teresa,Marino,Untere Aegerten 56,1720,Corminboeuf,026 886 57 76,26.02.1943
+FEMALE,Sandra,Kohler,Forrenböhlstrasse 71,3186,Jetschwil,031 791 59 71,23.02.1928
+FEMALE,Tanja,Traugott,Lichtmattstrasse 7,3401,Burgdorf,034 755 76 45,17.03.2011
+MALE,Ettore,Ferri,Via Luzzas 107,3984,Fieschertal,027 229 21 80,09.02.1908
