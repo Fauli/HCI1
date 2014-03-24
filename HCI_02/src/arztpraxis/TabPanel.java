@@ -28,7 +28,7 @@ public class TabPanel extends JPanel {
 		panel1.setLayout(new GridLayout(1, 1));
 		panel1.add(panel1_1);
 		panel1.add(panel1_2);
-		
+
 		tabbedPane.addTab("Tab 1", icon, panel1, "Does nothing");
 		tabbedPane.setMnemonicAt(0, KeyEvent.VK_1);
 
@@ -36,7 +36,7 @@ public class TabPanel extends JPanel {
 		tabbedPane.addTab("Tab 2", icon, panel2, "Does twice as much nothing");
 		tabbedPane.setMnemonicAt(1, KeyEvent.VK_2);
 
-		JComponent panel3 = makeTextPanel("Panel #3");
+		JComponent panel3 = makeCalendarPanel2();
 		tabbedPane.addTab("Tab 3", icon, panel3, "Still does nothing");
 		tabbedPane.setMnemonicAt(2, KeyEvent.VK_3);
 
@@ -53,16 +53,22 @@ public class TabPanel extends JPanel {
 
 	public JComponent makeCalendarPanel() {
 		CalendarPanel calendarPanel = new CalendarPanel();
-	//	calendarPanel.setLayout(new GridLayout(1, 1));
+		// calendarPanel.setLayout(new GridLayout(1, 1));
 		return calendarPanel;
 	}
-	
+
+	public JComponent makeCalendarPanel2() {
+		CalendarPanel2 calendarPanel2 = new CalendarPanel2();
+		// calendarPanel.setLayout(new GridLayout(1, 1));
+		return calendarPanel2;
+	}
+
 	public JComponent makeAufgabenPanel() {
 		AufgabenPanel aufgabenPanel = new AufgabenPanel();
-	//	calendarPanel.setLayout(new GridLayout(1, 1));
+		// calendarPanel.setLayout(new GridLayout(1, 1));
 		return aufgabenPanel;
 	}
-	
+
 	public JComponent makeTextPanel(String text) {
 		JPanel panel = new JPanel(false);
 		JLabel filler = new JLabel(text);

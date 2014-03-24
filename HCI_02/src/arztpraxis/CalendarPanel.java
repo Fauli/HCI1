@@ -59,8 +59,8 @@ public class CalendarPanel extends JPanel {
 		lblMonth = new JLabel("January");
 		lblYear = new JLabel("Change year:");
 		cmbYear = new JComboBox();
-		btnPrev = new JButton("&lt;&lt;");
-		btnNext = new JButton("&gt;&gt;");
+		btnPrev = new JButton("<<");
+		btnNext = new JButton(">>");
 		mtblCalendar = new DefaultTableModel() {
 			public boolean isCellEditable(int rowIndex, int mColIndex) {
 				return true;
