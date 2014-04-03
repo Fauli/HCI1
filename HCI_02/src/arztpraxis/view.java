@@ -2,10 +2,14 @@ package arztpraxis;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
+import java.sql.Date;
+import java.util.Calendar;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+
+import com.example.hci1.arztpraxis.service.DiaryController;
 
 public class view extends JFrame {
 
@@ -40,6 +44,7 @@ public class view extends JFrame {
 
 		//CalendarPanel calendarPanel = new CalendarPanel();
 		//contentPane.add(calendarPanel);
+		
 
 		TabPanel tabPanel = new TabPanel();
 		contentPane.add(tabPanel);

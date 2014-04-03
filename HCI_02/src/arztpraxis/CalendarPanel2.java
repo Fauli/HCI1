@@ -15,6 +15,7 @@ import javax.swing.JTable;
 
 public class CalendarPanel2 extends JPanel {
 	Calendar cal = Calendar.getInstance();
+	final JTableDaysModel tableDaysModel = new JTableDaysModel();
 
 	public CalendarPanel2() {
 		super(new GridLayout(1, 1));
@@ -30,18 +31,26 @@ public class CalendarPanel2 extends JPanel {
 		System.out.println(cal.getWeeksInWeekYear());
 		System.out.println(cal.getFirstDayOfWeek());
 		int dayOfWeek = cal.get(Calendar.DAY_OF_WEEK);
+		
+		
 
-		for (int i = 0; i <= 6; i++) {
-			Calendar cali = cal;
-			cali.add(Calendar.DATE, 1);
-			JPanel dayPanel = new JPanel();
-			add(dayPanel);
-			JLabel dayLabel = new JLabel("" + cal.getTime());
-			JTable tblCalendar = new JTable();
-
-			dayPanel.add(tblCalendar);
-			dayPanel.add(dayLabel);
-		}
+//		for (int i = 0; i <= 6; i++) {
+//			Calendar cali = cal;
+//			cali.add(Calendar.DATE, 1);
+//			JPanel dayPanel = new JPanel();
+//			add(dayPanel);
+//			JLabel dayLabel = new JLabel("" + cal.getTime());
+//			JTable tblCalendar = new JTable();
+//
+//			dayPanel.add(tblCalendar);
+//			dayPanel.add(dayLabel);
+//		}
+		
+		JTable theTable = new JTable(tableDaysModel);
+		
+		add(theTable);
+		
+		
 		System.out.println(dayOfWeek);
 		System.out.println();
 
