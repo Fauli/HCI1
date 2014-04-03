@@ -1,7 +1,6 @@
 package arztpraxis;
 
 import java.awt.BorderLayout;
-import java.awt.Dimension;
 import java.awt.GridLayout;
 import java.awt.event.KeyEvent;
 
@@ -58,7 +57,7 @@ public class TabPanel extends JPanel {
 	}
 
 	public JComponent makeCalendarPanel2() {
-		CalendarPanel2 calendarPanel2 = new CalendarPanel2();
+		CalendarPanel calendarPanel2 = new CalendarPanel();
 		// calendarPanel.setLayout(new GridLayout(1, 1));
 		return calendarPanel2;
 	}

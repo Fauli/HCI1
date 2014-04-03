@@ -10,9 +10,9 @@ class JTableModel implements TableModel {
 	private Vector personVector = new Vector();
 	private Vector listenersVector = new Vector();
 
-	public void addPerson(Person person) {
+	public void addPerson(Person2 person1) {
 		int index = personVector.size();
-		personVector.add(person);
+		personVector.add(person1);
 
 		TableModelEvent e = new TableModelEvent((TableModel) this, index,
 				index, TableModelEvent.ALL_COLUMNS, TableModelEvent.INSERT);
@@ -46,7 +46,7 @@ class JTableModel implements TableModel {
 	}
 
 	public Object getValueAt(int rowIndex, int columnIndex) {
-		Person person = (Person) personVector.get(rowIndex);
+		Person2 person = (Person2) personVector.get(rowIndex);
 
 		switch (columnIndex) {
 		case 0:

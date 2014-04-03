@@ -60,9 +60,27 @@ public class Motorensteuerung extends JFrame {
 			public void keyReleased(KeyEvent e) {
 				if (e.getKeyCode() == 38) {
 					System.out.println("up");
+					speed += 1;
+					lblGeschwindigkeit.setText("" + speed);
+					if(speed == 10){
+						btnSchneller.setEnabled(false);
+					} else {
+						btnSchneller.setEnabled(true);
+						btnLangsamer.setEnabled(true);
+					}
+					
 				}
 				if (e.getKeyCode() == 40) {
 					System.out.println("down");
+					speed -= 1;
+					lblGeschwindigkeit.setText("" + speed);
+					if(speed == 0){
+						btnLangsamer.setEnabled(false);
+					} else {
+						btnLangsamer.setEnabled(true);
+						btnSchneller.setEnabled(true);
+					}
+					
 				}
 			}
 		});

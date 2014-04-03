@@ -1,0 +1,17 @@
+Titelsuche:
+Vollständige Serien suchen:
+Episodenanzahl:
+Sprachsuche:
+Genresuche:
+Ortsuche:
+Titel editieren:
+Anzahl Episoden angeben:
+
+Alle Arten eingeben was man will. Mit einem '_' am Anfang wird nur nach den Serien gesucht, die mit der Sucheabfrage anfangen. Wildcard = '*'.
+Durch anhacken werden nur vollständige Serien angezeigt.
+Episoden Anzahl angeben. Funktioniert auch mit < und >.
+Sprache auswählen die man sucht.
+Genre auswählen das man sucht.
+Ort wie "Spindel 2" auswählen den man sucht.
+Alles eingeben was man will.
+Anklicken wenn man die Serie als Vollständig angeben will.

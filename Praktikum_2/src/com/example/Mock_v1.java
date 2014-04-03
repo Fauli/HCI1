@@ -9,7 +9,6 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.JTabbedPane;
 import java.awt.FlowLayout;
 import javax.swing.JLabel;
-import javax.swing.JSplitPane;
 
 public class Mock_v1 extends JFrame {
 
@@ -53,9 +52,6 @@ public class Mock_v1 extends JFrame {
 		
 		JPanel panel_3 = new JPanel();
 		tabbedPane.addTab("Bernd B.", null, panel_3, null);
-		
-		JSplitPane splitPane = new JSplitPane();
-		panel_3.add(splitPane);
 		
 		JPanel panel = new JPanel();
 		contentPane.add(panel, BorderLayout.NORTH);

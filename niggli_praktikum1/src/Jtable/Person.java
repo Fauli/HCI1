@@ -1,5 +1,7 @@
 package Jtable;
 
+import java.util.Date;
+
 public class Person {
 	public enum Gender {
 		MALE, FEMALE
