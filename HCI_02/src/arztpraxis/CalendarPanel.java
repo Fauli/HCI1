@@ -56,7 +56,7 @@ public class CalendarPanel extends JPanel {
 
 				
 			}
-		});
+		}); 
 		
 		
 		add(new JScrollPane(theTable));
