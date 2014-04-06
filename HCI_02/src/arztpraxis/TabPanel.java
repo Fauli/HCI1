@@ -48,7 +48,7 @@ public class TabPanel extends JPanel {
 		tabbedPane.addTab("Sophie Keller ", icon, panel5, "Does nothing at all");
 		tabbedPane.setMnemonicAt(3, KeyEvent.VK_4);
 		
-		// Add the tabbed pane to this panel.
+		// Add the tabbed pane to thi s panel.
 		add(tabbedPane);
 
 		// The following line enables to use scrolling tabs.
