@@ -266,6 +266,59 @@ public class AddAppointmentFrame extends JFrame {
 		
 		JPanel absencePanel = new JPanel();
 		tabbedPane.addTab("Absenzen", null, absencePanel, null);
+		GridBagLayout gbl_absencePanel = new GridBagLayout();
+		gbl_absencePanel.columnWidths = new int[]{0, 0, 0};
+		gbl_absencePanel.rowHeights = new int[]{0, 0, 0, 0};
+		gbl_absencePanel.columnWeights = new double[]{0.0, 1.0, Double.MIN_VALUE};
+		gbl_absencePanel.rowWeights = new double[]{0.0, 0.0, 0.0, Double.MIN_VALUE};
+		absencePanel.setLayout(gbl_absencePanel);
+		
+		JLabel lblStartzeit_Absenzen = new JLabel("Startzeit");
+		GridBagConstraints gbc_lblStartzeit_Absenzen = new GridBagConstraints();
+		gbc_lblStartzeit_Absenzen.anchor = GridBagConstraints.EAST;
+		gbc_lblStartzeit_Absenzen.insets = new Insets(0, 0, 5, 5);
+		gbc_lblStartzeit_Absenzen.gridx = 0;
+		gbc_lblStartzeit_Absenzen.gridy = 0;
+		absencePanel.add(lblStartzeit_Absenzen, gbc_lblStartzeit_Absenzen);
+		
+		JComboBox startZeitAbsenzenComboBox = new JComboBox(startZeitBoxModel);
+		GridBagConstraints gbc_startZeitAbsenzenComboBox = new GridBagConstraints();
+		gbc_startZeitAbsenzenComboBox.insets = new Insets(0, 0, 5, 0);
+		gbc_startZeitAbsenzenComboBox.fill = GridBagConstraints.HORIZONTAL;
+		gbc_startZeitAbsenzenComboBox.gridx = 1;
+		gbc_startZeitAbsenzenComboBox.gridy = 0;
+		absencePanel.add(startZeitAbsenzenComboBox, gbc_startZeitAbsenzenComboBox);
+		
+		JLabel lblEndzeit_Absenzen = new JLabel("Endzeit");
+		GridBagConstraints gbc_lblEndzeit_Absenzen = new GridBagConstraints();
+		gbc_lblEndzeit_Absenzen.anchor = GridBagConstraints.EAST;
+		gbc_lblEndzeit_Absenzen.insets = new Insets(0, 0, 5, 5);
+		gbc_lblEndzeit_Absenzen.gridx = 0;
+		gbc_lblEndzeit_Absenzen.gridy = 1;
+		absencePanel.add(lblEndzeit_Absenzen, gbc_lblEndzeit_Absenzen);
+		
+		JComboBox endZeitAbsenzenComboBox = new JComboBox(endZeitBoxModel);
+		GridBagConstraints gbc_endZeitAbsenzenComboBox = new GridBagConstraints();
+		gbc_endZeitAbsenzenComboBox.insets = new Insets(0, 0, 5, 0);
+		gbc_endZeitAbsenzenComboBox.fill = GridBagConstraints.HORIZONTAL;
+		gbc_endZeitAbsenzenComboBox.gridx = 1;
+		gbc_endZeitAbsenzenComboBox.gridy = 1;
+		absencePanel.add(endZeitAbsenzenComboBox, gbc_endZeitAbsenzenComboBox);
+		
+		JLabel lblArzt_Absenzen = new JLabel("Arzt");
+		GridBagConstraints gbc_lblArzt_Absenzen = new GridBagConstraints();
+		gbc_lblArzt_Absenzen.anchor = GridBagConstraints.EAST;
+		gbc_lblArzt_Absenzen.insets = new Insets(0, 0, 0, 5);
+		gbc_lblArzt_Absenzen.gridx = 0;
+		gbc_lblArzt_Absenzen.gridy = 2;
+		absencePanel.add(lblArzt_Absenzen, gbc_lblArzt_Absenzen);
+		
+		JComboBox arztAbsenzenComboBox = new JComboBox(arztBoxModel);
+		GridBagConstraints gbc_arztAbsenzenComboBox = new GridBagConstraints();
+		gbc_arztAbsenzenComboBox.fill = GridBagConstraints.HORIZONTAL;
+		gbc_arztAbsenzenComboBox.gridx = 1;
+		gbc_arztAbsenzenComboBox.gridy = 2;
+		absencePanel.add(arztAbsenzenComboBox, gbc_arztAbsenzenComboBox);
 		
 		JButton btnSave = new JButton("Save");
 		contentPane.add(btnSave, BorderLayout.SOUTH);
