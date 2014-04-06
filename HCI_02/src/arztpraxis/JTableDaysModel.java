@@ -35,6 +35,20 @@ class JTableDaysModel implements TableModel {
 		}
 
 	}
+	
+	public void clearDays() {
+		int index = dayVector.size();
+		System.out.println("clearing "+index+" etnries of days");
+		dayVector.clear();
+		
+		TableModelEvent e = new TableModelEvent((TableModel) this, index,
+				index, TableModelEvent.ALL_COLUMNS, TableModelEvent.INSERT);
+		
+		for (int i = 0, n = listenersVector.size(); i < n; i++) {
+			((TableModelListener) listenersVector.get(i)).tableChanged(e);
+		}
+
+	}
 
 	public int getRowCount() {
 		// return personVector.size();

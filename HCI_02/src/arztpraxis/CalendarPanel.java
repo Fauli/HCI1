@@ -15,6 +15,8 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
 
+import sun.awt.windows.ThemeReader;
+
 public class CalendarPanel extends JPanel {
 	Calendar cal = Calendar.getInstance();
 	int firstDayOfWeek = 1;
@@ -40,7 +42,7 @@ public class CalendarPanel extends JPanel {
 			public void actionPerformed(ActionEvent arg0) {
 				// TODO Auto-generated method stub
 				decDayOfYear(7);
-				theTable.repaint();
+				drawCalendar();
 			}
 		});
 		
@@ -50,11 +52,12 @@ public class CalendarPanel extends JPanel {
 			public void actionPerformed(ActionEvent arg0) {
 				// TODO Auto-generated method stub
 				incDayOfYear(7);
-				theTable.repaint();
+				drawCalendar();
 
 				
 			}
 		});
+		
 		
 		add(new JScrollPane(theTable));
 		theTable.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -80,11 +83,13 @@ public class CalendarPanel extends JPanel {
 		cal.set(DAY_OF_WEEK, 1);
 		//cal.set(2014, 4, 6);
 		cal.set(Calendar.DAY_OF_YEAR,dayOfYear);
+		System.out.println("Setting the day of year to "+dayOfYear);
 
 		int dayOfWeek = cal.get(Calendar.DAY_OF_WEEK);
 		
-
+		tableDaysModel.clearDays();
 		tableDaysModel.setFirtWeekDay(cal);
+		
 		for (int i = 0; i < 6; i++) {
 			// für jede tag
 			Calendar cali = cal;
@@ -98,13 +103,6 @@ public class CalendarPanel extends JPanel {
 		}
 	}
 	
-	private void incFirstWeekDay(int days){
-		this.firstDayOfWeek = this.firstDayOfWeek + days;
-	}
-	
-	private void decFirstWeekDay(int days){
-		this.firstDayOfWeek = this.firstDayOfWeek - days;
-	}
 	
 	private void incDayOfYear(int days){
 		this.dayOfYear = this.dayOfYear + days;
