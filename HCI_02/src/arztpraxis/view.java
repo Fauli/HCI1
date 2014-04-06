@@ -2,13 +2,13 @@ package arztpraxis;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
-import java.sql.Date;
-import java.util.Calendar;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
+import com.example.hci1.arztpraxis.domain.Allocation;
+import com.example.hci1.arztpraxis.domain.Patient;
 import com.example.hci1.arztpraxis.service.DiaryController;
 
 public class view extends JFrame {
@@ -36,7 +36,7 @@ public class view extends JFrame {
 	 */
 	public view() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 450, 300);
+		setBounds(100, 100, 963, 534);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		contentPane.setLayout(new BorderLayout(0, 0));
@@ -48,6 +48,11 @@ public class view extends JFrame {
 
 		TabPanel tabPanel = new TabPanel();
 		contentPane.add(tabPanel);
+		
+		DiaryController controller = new DiaryController();
+		for (Allocation allocation : controller.getAllocations()) {
+		System.out.println(allocation);
+		}
 		
 	}
 
