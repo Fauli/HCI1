@@ -12,67 +12,61 @@ import javax.swing.table.TableModel;
 class JTableDaysModel implements TableModel {
 	private Vector listenersVector = new Vector();
 	Calendar firstWeekDay = Calendar.getInstance();
+	private Vector dayVector = new Vector();
+
+	public JTableDaysModel() {
+		DayClass rowLabel = new DayClass();
+		addDay(rowLabel);
+	}
 
 	public int getColumnCount() {
-		return 6;
+		return dayVector.size();
+	}
+
+	public void addDay(DayClass day) {
+		int index = dayVector.size();
+		dayVector.add(day);
+
+		TableModelEvent e = new TableModelEvent((TableModel) this, index,
+				index, TableModelEvent.ALL_COLUMNS, TableModelEvent.INSERT);
+
+		for (int i = 0, n = listenersVector.size(); i < n; i++) {
+			((TableModelListener) listenersVector.get(i)).tableChanged(e);
+		}
+
 	}
 
 	public int getRowCount() {
-//		return personVector.size();
-		return 0;
+		// return personVector.size();
+		return 37;
 	}
+	
+	
 
 	public String getColumnName(int column) {
-		Calendar cali = firstWeekDay;
-		cali.add(Calendar.DATE, column);
-		Date date = cali.getTime();  
-		SimpleDateFormat format1 = new SimpleDateFormat("yyyy-MM-dd");
-		String date1 = format1.format(date);
-		return date1;
+		if (0 == column) {
+			return "Ziitvorschau";
+		} else {
+			Calendar cali = firstWeekDay;
+			cali.add(Calendar.DATE, column - 1);
+			Date date = cali.getTime();
+			SimpleDateFormat format1 = new SimpleDateFormat("yyyy-MM-dd");
+			String date1 = format1.format(date);
+			return date1;
+		}
 	}
 
 	public Object getValueAt(int rowIndex, int columnIndex) {
-//		Calendar person = (Calendar) personVector.get(rowIndex);
-
-		switch (columnIndex) {
-		case 0:
-			return "ahoi1";
-		case 1:
-			return "ahoi2";
-		case 2:
-			return "ahoi3";
-		case 3:
-			return "ahoi4";
-		default:
-			return "bllubbbbbbb";
-		}
+		DayClass day = (DayClass) dayVector.get(columnIndex);
+		return day.getThingi(rowIndex);
 	}
 
 	public Class getColumnClass(int columnIndex) {
-		switch (columnIndex) {
-		case 0:
-			return String.class;
-		case 1:
-			return String.class;
-		case 2:
-			return String.class;
-		case 3:
-			return String.class;
-		default:
-			return null;
-		}
+		return String.class;
 	}
 
 	public void setFirtWeekDay(Calendar firstWeekDay) {
 		this.firstWeekDay = firstWeekDay;
-		
-		int index = 1;
-		TableModelEvent e = new TableModelEvent((TableModel) this, index,
-				index, TableModelEvent.ALL_COLUMNS, TableModelEvent.INSERT);
-		
-		for (int i = 0, n = listenersVector.size(); i < n; i++) {
-			((TableModelListener) listenersVector.get(i)).tableChanged(e);
-		}
 
 	}
 

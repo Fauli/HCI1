@@ -11,24 +11,24 @@ import com.example.hci1.arztpraxis.domain.Appointment;
 
 public class DayClass {
 	Calendar day;
-	private String[] thingi = new String[36];
+	private String[] thingi = new String[37];
 
 	public DayClass(Calendar day) {
 		this.day = day;
 	}
 
 	public void addAppointment(Appointment appointment) {
-		Date dateStart = (Date) appointment.getStart().getTime();             
-		Date dateEnd = (Date) appointment.getEnd().getTime();    
-		SimpleDateFormat hours = new SimpleDateFormat("hh");
-		SimpleDateFormat minuts = new SimpleDateFormat("mm");
-		String startHours = hours.format(dateStart);            
-		String startMinuts = minuts.format(dateStart);
-		String endHours = hours.format(dateStart);            
-		String endMinuts = minuts.format(dateStart);
+//		add appointment to this day
+		int from = (appointment.getStart().get(HOUR_OF_DAY) - 8) * 4 + appointment.getStart().get(MINUTE) / 15;
+		int to = (appointment.getEnd().get(HOUR_OF_DAY) - 8) * 4 + appointment.getEnd().get(MINUTE) / 15;
+		
+		for (int i = from; i <= to; i++) {
+			thingi[i] = "42";
+		}
+
 	}
-	
-	public void setDayAsLabel(){
+
+	public DayClass() {
 		Calendar cal = Calendar.getInstance();
 		cal.set(MINUTE, 0);
 		cal.set(HOUR_OF_DAY, 8);
@@ -38,5 +38,9 @@ public class DayClass {
 			thingi[i] = startHours;
 			cal.add(MINUTE, 15);
 		}
+	}
+
+	public String getThingi(int index) {
+		return thingi[index];
 	}
 }

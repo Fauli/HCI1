@@ -6,19 +6,18 @@ import static java.util.Calendar.MILLISECOND;
 import static java.util.Calendar.MINUTE;
 import static java.util.Calendar.SECOND;
 
-import java.awt.GridLayout;
-import java.sql.Date;
-import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
-import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JScrollPane;
 import javax.swing.JTable;
 
 public class CalendarPanel extends JPanel {
 	Calendar cal = Calendar.getInstance();
-	final JTableDaysModel tableDaysModel = new JTableDaysModel();
 
+	final JTableDaysModel tableDaysModel = new JTableDaysModel();
+	
+	
 	public CalendarPanel() {
 		// super(new GridLayout(1, 1));
 
@@ -30,22 +29,28 @@ public class CalendarPanel extends JPanel {
 
 		int dayOfWeek = cal.get(Calendar.DAY_OF_WEEK);
 
-		tableDaysModel.setFirtWeekDay(cal);
-
+		
 		JTable theTable = new JTable(tableDaysModel);
-
-		add(theTable);
-		System.out.println("table added");
-
-		cal.set(MINUTE, 0);
-		cal.set(HOUR_OF_DAY, 8);
-		for (int i = 0; i <= 36; i++) {
-			SimpleDateFormat testFormat = new SimpleDateFormat("HH:mm");
-			String startHours = testFormat.format(cal.getTime());
-			System.out.println(startHours);
-
-			cal.add(MINUTE, 15);
+		
+		tableDaysModel.setFirtWeekDay(cal);
+		for (int i = 0; i < 6; i++) {
+//			für jede tag
+			Calendar cali = cal;
+			cali.add(Calendar.DATE, i);
+			DayClass  day = new DayClass(cal);
+//			get all appointments --> hinzuefüge zu DayClass
+		
+//			fucking static shit
+//			JTableDaysModel.addDay(day);
+			
 		}
+		
+		add(new JScrollPane(theTable));
+
+		
+//		add(theTable);
+		
 
 	}
+
 }
