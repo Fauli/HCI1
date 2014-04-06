@@ -31,6 +31,7 @@ public class CalendarPanel extends JPanel {
 		this.add(lastWeekBtn);
 		this.add(nextWeekBtn);
 		
+		final JTable theTable = new JTable(tableDaysModel);
 		
 		
 		lastWeekBtn.addActionListener(new ActionListener() {
@@ -39,6 +40,7 @@ public class CalendarPanel extends JPanel {
 			public void actionPerformed(ActionEvent arg0) {
 				// TODO Auto-generated method stub
 				decDayOfYear(7);
+				theTable.repaint();
 			}
 		});
 		
@@ -48,10 +50,12 @@ public class CalendarPanel extends JPanel {
 			public void actionPerformed(ActionEvent arg0) {
 				// TODO Auto-generated method stub
 				incDayOfYear(7);
+				theTable.repaint();
+
+				
 			}
 		});
 		
-		final JTable theTable = new JTable(tableDaysModel);
 		add(new JScrollPane(theTable));
 		theTable.addMouseListener(new java.awt.event.MouseAdapter() {
 			@Override
