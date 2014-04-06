@@ -87,7 +87,7 @@ public class CalendarPanel extends JPanel {
 
 		int dayOfWeek = cal.get(Calendar.DAY_OF_WEEK);
 		
-		tableDaysModel.clearDays();
+		//tableDaysModel.clearDays(); -> löscht zu viel
 		tableDaysModel.setFirtWeekDay(cal);
 		
 		for (int i = 0; i < 6; i++) {
