@@ -10,8 +10,10 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.border.EmptyBorder;
+import javax.swing.event.TableModelEvent;
+import javax.swing.event.TableModelListener;
 
-public class AufgabenPanel extends JPanel {
+public class AufgabenPanel extends JPanel implements TableModelListener {
 	final JtableAufgabenModel tableDaysModel = new JtableAufgabenModel();
 	final JTable theTable = new JTable(tableDaysModel);
 
@@ -35,5 +37,12 @@ public class AufgabenPanel extends JPanel {
 
 	public void repaintTable() {
 		theTable.repaint();
+	}
+
+	@Override
+	public void tableChanged(TableModelEvent e) {
+		// TODO Auto-generated method stub
+		System.out.println(e.toString());
+		//tableDaysModel.addAufgabe(aufgabe);
 	}
 }

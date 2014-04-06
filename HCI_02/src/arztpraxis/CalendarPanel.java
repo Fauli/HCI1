@@ -9,13 +9,15 @@ import static java.util.Calendar.SECOND;
 import java.awt.Button;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
+import javax.swing.DefaultComboBoxModel;
+import javax.swing.JComboBox;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
-
-import sun.awt.windows.ThemeReader;
 
 public class CalendarPanel extends JPanel {
 	Calendar cal = Calendar.getInstance();
@@ -31,41 +33,55 @@ public class CalendarPanel extends JPanel {
 		Button lastWeekBtn = new Button("Letzte Woche");
 		Button nextWeekBtn = new Button("Nächste Woche");
 		this.add(lastWeekBtn);
-		this.add(nextWeekBtn);
-		
+
 		final JTable theTable = new JTable(tableDaysModel);
-		
-		
+
 		lastWeekBtn.addActionListener(new ActionListener() {
-			
+
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				// TODO Auto-generated method stub
 				decDayOfYear(7);
 				drawCalendar();
+				revalidate();
 			}
 		});
-		
+
+		Calendar boxCalendar = Calendar.getInstance();
+		DefaultComboBoxModel<String> dateBoxModel = new DefaultComboBoxModel<String>();
+
+		DateFormat df = new SimpleDateFormat("EEE dd.MM.yyyy");
+		boxCalendar.add(Calendar.DATE, 1);
+		boxCalendar.setFirstDayOfWeek(2);
+		for (int i = 0; i < 52; i++) {
+			System.out.println(df.format(boxCalendar.getTime()));
+			boxCalendar.add(Calendar.DATE, 7);
+			dateBoxModel.addElement(df.format(boxCalendar.getTime()));
+		}
+
+		JComboBox<String> dateBox = new JComboBox<String>(dateBoxModel);
+		add(dateBox);
+
+		this.add(nextWeekBtn);
 		nextWeekBtn.addActionListener(new ActionListener() {
-			
+
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				// TODO Auto-generated method stub
 				incDayOfYear(7);
 				drawCalendar();
+				revalidate();
 
-				
 			}
-		}); 
-		
-		
+		});
+
 		add(new JScrollPane(theTable));
 		theTable.addMouseListener(new java.awt.event.MouseAdapter() {
 			@Override
 			public void mouseClicked(java.awt.event.MouseEvent evt) {
 				int row = theTable.rowAtPoint(evt.getPoint());
 				int col = theTable.columnAtPoint(evt.getPoint());
-				System.out.println("row: "+row+" col: "+col);
+				System.out.println("row: " + row + " col: " + col);
 				AddAppointmentFrame addAppFrame = new AddAppointmentFrame();
 				addAppFrame.setVisible(true);
 			}
@@ -81,15 +97,15 @@ public class CalendarPanel extends JPanel {
 		cal.set(SECOND, 0);
 		cal.set(MILLISECOND, 0);
 		cal.set(DAY_OF_WEEK, 1);
-		//cal.set(2014, 4, 6);
-		cal.set(Calendar.DAY_OF_YEAR,dayOfYear);
-		System.out.println("Setting the day of year to "+dayOfYear);
+		// cal.set(2014, 4, 6);
+		cal.set(Calendar.DAY_OF_YEAR, dayOfYear);
+		System.out.println("Setting the day of year to " + dayOfYear);
 
 		int dayOfWeek = cal.get(Calendar.DAY_OF_WEEK);
-		
-		//tableDaysModel.clearDays(); -> löscht zu viel
+
+		// tableDaysModel.clearDays(); -> löscht zu viel
 		tableDaysModel.setFirtWeekDay(cal);
-		
+
 		for (int i = 0; i < 6; i++) {
 			// für jede tag
 			Calendar cali = cal;
@@ -102,18 +118,16 @@ public class CalendarPanel extends JPanel {
 
 		}
 	}
-	
-	
-	private void incDayOfYear(int days){
+
+	private void incDayOfYear(int days) {
 		this.dayOfYear = this.dayOfYear + days;
-		System.out.println("set day of year to "+dayOfYear);
+		System.out.println("set day of year to " + dayOfYear);
 	}
-	
-	private void decDayOfYear(int days){
+
+	private void decDayOfYear(int days) {
 		this.dayOfYear = this.dayOfYear - days;
-		System.out.println("set day of year to "+dayOfYear);
+		System.out.println("set day of year to " + dayOfYear);
 
 	}
-
 
 }

@@ -40,7 +40,7 @@ public class JtableAufgabenModel implements TableModel  {
 	}
 
 	public String getColumnName(int column) {
-		return "asdf";
+		return "Aufgaben";
 	}
 
 	public Object getValueAt(int rowIndex, int columnIndex) {
