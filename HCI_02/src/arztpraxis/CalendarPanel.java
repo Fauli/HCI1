@@ -16,8 +16,7 @@ public class CalendarPanel extends JPanel {
 	Calendar cal = Calendar.getInstance();
 
 	final JTableDaysModel tableDaysModel = new JTableDaysModel();
-	
-	
+
 	public CalendarPanel() {
 		// super(new GridLayout(1, 1));
 
@@ -29,27 +28,33 @@ public class CalendarPanel extends JPanel {
 
 		int dayOfWeek = cal.get(Calendar.DAY_OF_WEEK);
 
-		
-		
 		tableDaysModel.setFirtWeekDay(cal);
 		for (int i = 0; i < 6; i++) {
-//			für jede tag
+			// für jede tag
 			Calendar cali = cal;
 			cali.add(Calendar.DATE, i);
-			DayClass  day = new DayClass(cal);
-//			get all appointments --> hinzuefüge zu DayClass
-		
-//			fucking static shit
+			DayClass day = new DayClass(cal);
+			// get all appointments --> hinzuefüge zu DayClass
+
+			// fucking static shit
 			tableDaysModel.addDay(day);
-			
+
 		}
 
-		JTable theTable = new JTable(tableDaysModel);
+		final JTable theTable = new JTable(tableDaysModel);
 		add(new JScrollPane(theTable));
+		theTable.addMouseListener(new java.awt.event.MouseAdapter() {
+			@Override
+			public void mouseClicked(java.awt.event.MouseEvent evt) {
+				int row = theTable.rowAtPoint(evt.getPoint());
+				int col = theTable.columnAtPoint(evt.getPoint());
+				System.out.println("row: "+row+" col: "+col);
+				AddAppointmentFrame addAppFrame = new AddAppointmentFrame();
+				addAppFrame.setVisible(true);
+			}
+		});
 
-		
-//		add(theTable);
-		
+		// add(theTable);
 
 	}
 
