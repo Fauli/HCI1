@@ -13,9 +13,9 @@ import javax.swing.border.EmptyBorder;
 
 public class AufgabenPanel extends JPanel {
 	final JtableAufgabenModel tableDaysModel = new JtableAufgabenModel();
+	final JTable theTable = new JTable(tableDaysModel);
 	
 	public AufgabenPanel() {
-		setBounds(100, 100, 450, 300);
 		setBorder(new EmptyBorder(5, 5, 5, 5));
 		setLayout(new BorderLayout(0, 0));
 
@@ -23,15 +23,15 @@ public class AufgabenPanel extends JPanel {
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				tableDaysModel.addAufgabe();
+				repaintTable();
+				System.out.println("added aufgabe");
 			}
 		});
-		btnNewButton.setBounds(171, 228, 122, 23);
-		add(btnNewButton);
-		
-	
-		JTable theTable = new JTable(tableDaysModel);
+		add(btnNewButton, BorderLayout.NORTH);
+
 		add(new JScrollPane(theTable));
-		
-		
+	}
+	public void repaintTable(){
+		theTable.repaint();
 	}
 }
