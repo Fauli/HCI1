@@ -8,6 +8,7 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
 import com.example.hci1.arztpraxis.domain.Allocation;
+import com.example.hci1.arztpraxis.domain.Doctor;
 import com.example.hci1.arztpraxis.domain.Patient;
 import com.example.hci1.arztpraxis.service.DiaryController;
 
@@ -43,14 +44,14 @@ public class view extends JFrame {
 		setContentPane(contentPane);
 
 		//CalendarPanel calendarPanel = new CalendarPanel();
-		//contentPane.add(calendarPanel);
+		//contentPane.add(calendarPanel); 
 		
 
 		TabPanel tabPanel = new TabPanel();
 		contentPane.add(tabPanel);
 		
 		DiaryController controller = new DiaryController();
-		for (Allocation allocation : controller.getAllocations()) {
+		for (Doctor allocation : controller.getDoctors()) {
 		System.out.println(allocation);
 		}
 		
