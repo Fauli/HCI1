@@ -3,11 +3,11 @@ package arztpraxis;
 import static java.util.Calendar.HOUR_OF_DAY;
 import static java.util.Calendar.MINUTE;
 
-import java.sql.Date;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 import com.example.hci1.arztpraxis.domain.Appointment;
+import com.example.hci1.arztpraxis.domain.Break;
 
 public class DayClass {
 	Calendar day;
@@ -18,10 +18,25 @@ public class DayClass {
 	}
 
 	public void addAppointment(Appointment appointment) {
-//		add appointment to this day
-		int from = (appointment.getStart().get(HOUR_OF_DAY) - 8) * 4 + appointment.getStart().get(MINUTE) / 15;
-		int to = (appointment.getEnd().get(HOUR_OF_DAY) - 8) * 4 + appointment.getEnd().get(MINUTE) / 15;
-		
+		// add appointment to this day
+		int from = (appointment.getStart().get(HOUR_OF_DAY) - 8) * 4
+				+ appointment.getStart().get(MINUTE) / 15;
+		int to = (appointment.getEnd().get(HOUR_OF_DAY) - 8) * 4
+				+ appointment.getEnd().get(MINUTE) / 15;
+
+		for (int i = from; i <= to; i++) {
+			thingi[i] = "42";
+		}
+
+	}
+
+	public void addBreak(Break breaki) {
+		// add appointment to this day
+		int from = (breaki.getStart().get(HOUR_OF_DAY) - 8) * 4
+				+ breaki.getStart().get(MINUTE) / 15;
+		int to = (breaki.getEnd().get(HOUR_OF_DAY) - 8) * 4
+				+ breaki.getEnd().get(MINUTE) / 15;
+
 		for (int i = from; i <= to; i++) {
 			thingi[i] = "42";
 		}
