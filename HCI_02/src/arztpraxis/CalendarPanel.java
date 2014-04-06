@@ -30,7 +30,6 @@ public class CalendarPanel extends JPanel {
 		int dayOfWeek = cal.get(Calendar.DAY_OF_WEEK);
 
 		
-		JTable theTable = new JTable(tableDaysModel);
 		
 		tableDaysModel.setFirtWeekDay(cal);
 		for (int i = 0; i < 6; i++) {
@@ -41,10 +40,11 @@ public class CalendarPanel extends JPanel {
 //			get all appointments --> hinzuefüge zu DayClass
 		
 //			fucking static shit
-//			JTableDaysModel.addDay(day);
+			tableDaysModel.addDay(day);
 			
 		}
-		
+
+		JTable theTable = new JTable(tableDaysModel);
 		add(new JScrollPane(theTable));
 
 		
