@@ -17,6 +17,8 @@ import javax.swing.JTable;
 
 public class CalendarPanel extends JPanel {
 	Calendar cal = Calendar.getInstance();
+	int firstDayOfWeek = 1;
+	int dayOfYear = Calendar.getInstance().get(Calendar.DAY_OF_YEAR);
 
 	final JTableDaysModel tableDaysModel = new JTableDaysModel();
 
@@ -29,6 +31,7 @@ public class CalendarPanel extends JPanel {
 		this.add(lastWeekBtn);
 		this.add(nextWeekBtn);
 		
+		final JTable theTable = new JTable(tableDaysModel);
 		
 		
 		lastWeekBtn.addActionListener(new ActionListener() {
@@ -36,7 +39,8 @@ public class CalendarPanel extends JPanel {
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				// TODO Auto-generated method stub
-				
+				decDayOfYear(7);
+				theTable.repaint();
 			}
 		});
 		
@@ -45,11 +49,13 @@ public class CalendarPanel extends JPanel {
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				// TODO Auto-generated method stub
+				incDayOfYear(7);
+				theTable.repaint();
+
 				
 			}
 		});
 		
-		final JTable theTable = new JTable(tableDaysModel);
 		add(new JScrollPane(theTable));
 		theTable.addMouseListener(new java.awt.event.MouseAdapter() {
 			@Override
@@ -72,8 +78,11 @@ public class CalendarPanel extends JPanel {
 		cal.set(SECOND, 0);
 		cal.set(MILLISECOND, 0);
 		cal.set(DAY_OF_WEEK, 1);
+		//cal.set(2014, 4, 6);
+		cal.set(Calendar.DAY_OF_YEAR,dayOfYear);
 
 		int dayOfWeek = cal.get(Calendar.DAY_OF_WEEK);
+		
 
 		tableDaysModel.setFirtWeekDay(cal);
 		for (int i = 0; i < 6; i++) {
@@ -88,5 +97,25 @@ public class CalendarPanel extends JPanel {
 
 		}
 	}
+	
+	private void incFirstWeekDay(int days){
+		this.firstDayOfWeek = this.firstDayOfWeek + days;
+	}
+	
+	private void decFirstWeekDay(int days){
+		this.firstDayOfWeek = this.firstDayOfWeek - days;
+	}
+	
+	private void incDayOfYear(int days){
+		this.dayOfYear = this.dayOfYear + days;
+		System.out.println("set day of year to "+dayOfYear);
+	}
+	
+	private void decDayOfYear(int days){
+		this.dayOfYear = this.dayOfYear - days;
+		System.out.println("set day of year to "+dayOfYear);
+
+	}
+
 
 }

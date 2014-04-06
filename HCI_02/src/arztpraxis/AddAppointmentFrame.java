@@ -8,6 +8,8 @@ import java.awt.EventQueue;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 import java.awt.Insets;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Set;
@@ -59,6 +61,7 @@ public class AddAppointmentFrame extends JFrame {
 		contentPane.setLayout(new BorderLayout(0, 0));
 		setContentPane(contentPane);
 		DiaryController dc = new DiaryController();
+		this.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
 		
 		JTabbedPane tabbedPane = new JTabbedPane(JTabbedPane.TOP);
 		contentPane.add(tabbedPane, BorderLayout.CENTER);
@@ -321,6 +324,16 @@ public class AddAppointmentFrame extends JFrame {
 		absencePanel.add(arztAbsenzenComboBox, gbc_arztAbsenzenComboBox);
 		
 		JButton btnSave = new JButton("Save");
+		btnSave.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				// TODO Auto-generated method stub
+				System.out.println("WOULD now save the entry, but currently not.. needs to be implemented");
+				setVisible(false);
+				dispose();
+			}
+		});
 		contentPane.add(btnSave, BorderLayout.SOUTH);
 	}
 
