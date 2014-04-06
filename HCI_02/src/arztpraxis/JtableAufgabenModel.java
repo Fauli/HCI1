@@ -1,15 +1,12 @@
 package arztpraxis;
 
-import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.Date;
 import java.util.Vector;
 
-import javax.swing.event.TableModelEvent;
 import javax.swing.event.TableModelListener;
 import javax.swing.table.TableModel;
 
-public class JtableAufgabenModel implements TableModel {
+public class JtableAufgabenModel implements TableModel  {
 	private Vector listenersVector = new Vector();
 	Calendar firstWeekDay = Calendar.getInstance();
 	int index = 1;
