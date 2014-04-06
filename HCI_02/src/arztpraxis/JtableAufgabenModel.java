@@ -3,39 +3,49 @@ package arztpraxis;
 import java.util.Calendar;
 import java.util.Vector;
 
+import javax.swing.event.TableModelEvent;
 import javax.swing.event.TableModelListener;
 import javax.swing.table.TableModel;
 
 public class JtableAufgabenModel implements TableModel  {
 	private Vector listenersVector = new Vector();
+	private Vector aufgabenVector = new Vector();
 	Calendar firstWeekDay = Calendar.getInstance();
 	int index = 1;
 
 	public JtableAufgabenModel(){
-		
+		Aufgabe addAufgabe=new Aufgabe("Example Aufgabe");
+		addAufgabe(addAufgabe);
+	}
+	
+	public void addAufgabe(Aufgabe aufgabe) {
+		int index = aufgabenVector.size();
+		aufgabenVector.add(aufgabe);
+
+		TableModelEvent e = new TableModelEvent((TableModel) this, index,
+				index, TableModelEvent.ALL_COLUMNS, TableModelEvent.INSERT);
+
+		for (int i = 0, n = listenersVector.size(); i < n; i++) {
+			((TableModelListener) listenersVector.get(i)).tableChanged(e);
+		}
 	}
 	
 	public int getColumnCount() {
 		return 1;
 	}
 
-	public void addAufgabe() {
-		index++;
-	}
-
 	public int getRowCount() {
 		// return personVector.size();
-		return index;
+		return aufgabenVector.size();
 	}
 
 	public String getColumnName(int column) {
-
 		return "asdf";
-
 	}
 
 	public Object getValueAt(int rowIndex, int columnIndex) {
-		return "";
+		Aufgabe aufgabe = (Aufgabe) aufgabenVector.get(rowIndex);
+		return aufgabe.getAufgabe();
 	}
 
 	public Class getColumnClass(int columnIndex) {

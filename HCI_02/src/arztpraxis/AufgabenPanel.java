@@ -22,7 +22,8 @@ public class AufgabenPanel extends JPanel {
 		JButton btnNewButton = new JButton("Aufgabe hinzufügen");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				tableDaysModel.addAufgabe();
+				Aufgabe newAufgabe = new Aufgabe("");
+				tableDaysModel.addAufgabe(newAufgabe);
 				repaintTable();
 				System.out.println("added aufgabe: "
 						+ tableDaysModel.getRowCount());
@@ -33,6 +34,6 @@ public class AufgabenPanel extends JPanel {
 	}
 
 	public void repaintTable() {
-		theTable.repaint(); 
+		theTable.repaint();
 	}
 }
