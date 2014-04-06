@@ -25,14 +25,14 @@ public class TabPanel extends JPanel {
 		JComponent panel11 = makeCalendarPanel();
 		JComponent panel12 = makeAufgabenPanel();
 		JSplitPane splitPane1 = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, panel11, panel12);
-		splitPane1.setDividerLocation(splitPane1.getSize().width - splitPane1.getInsets().right - splitPane1.getDividerSize() - 150);
+		splitPane1.setDividerLocation(0.75);
 		tabbedPane.addTab("Michaela Schneider", icon, splitPane1, "Does nothing");
 		tabbedPane.setMnemonicAt(0, KeyEvent.VK_1);
 
 		JComponent panel21 = makeCalendarPanel();
 		JComponent panel22 = makeAufgabenPanel();
 		JSplitPane splitPane2 = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, panel21, panel22);
-		splitPane2.setDividerLocation(splitPane2.getSize().width - splitPane2.getInsets().right - splitPane2.getDividerSize() - 150);
+		splitPane2.setDividerLocation(0.75);
 		tabbedPane.addTab("Franz Bodmer", icon, splitPane2, "Does twice as much nothing");
 		tabbedPane.setMnemonicAt(1, KeyEvent.VK_2);
 
