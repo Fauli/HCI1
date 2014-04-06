@@ -1,7 +1,6 @@
 package arztpraxis;
 
 import java.awt.BorderLayout;
-import java.awt.Dimension;
 import java.awt.GridLayout;
 import java.awt.event.KeyEvent;
 
@@ -10,6 +9,7 @@ import javax.swing.JComponent;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JSplitPane;
 import javax.swing.JTabbedPane;
 import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
@@ -22,28 +22,32 @@ public class TabPanel extends JPanel {
 		JTabbedPane tabbedPane = new JTabbedPane();
 		ImageIcon icon = createImageIcon("images/middle.gif");
 
-		JComponent panel1_1 = makeCalendarPanel();
-		JComponent panel1_2 = makeAufgabenPanel();
-		JPanel panel1 = new JPanel();
-		panel1.setLayout(new GridLayout(1, 1));
-		panel1.add(panel1_1);
-		panel1.add(panel1_2);
-
-		tabbedPane.addTab("Tab 1", icon, panel1, "Does nothing");
+		JComponent panel11 = makeCalendarPanel();
+		JComponent panel12 = makeAufgabenPanel();
+		JSplitPane splitPane1 = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, panel11, panel12);
+		splitPane1.setDividerLocation(splitPane1.getSize().width - splitPane1.getInsets().right - splitPane1.getDividerSize() - 150);
+		tabbedPane.addTab("Michaela Schneider", icon, splitPane1, "Does nothing");
 		tabbedPane.setMnemonicAt(0, KeyEvent.VK_1);
 
-		JComponent panel2 = makeTextPanel("Panel #2");
-		tabbedPane.addTab("Tab 2", icon, panel2, "Does twice as much nothing");
+		JComponent panel21 = makeCalendarPanel();
+		JComponent panel22 = makeAufgabenPanel();
+		JSplitPane splitPane2 = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, panel21, panel22);
+		splitPane2.setDividerLocation(splitPane2.getSize().width - splitPane2.getInsets().right - splitPane2.getDividerSize() - 150);
+		tabbedPane.addTab("Franz Bodmer", icon, splitPane2, "Does twice as much nothing");
 		tabbedPane.setMnemonicAt(1, KeyEvent.VK_2);
 
 		JComponent panel3 = makeCalendarPanel();
-		tabbedPane.addTab("Tab 3", icon, panel3, "Still does nothing");
+		tabbedPane.addTab("Karin Müller", icon, panel3, "Still does nothing");
 		tabbedPane.setMnemonicAt(2, KeyEvent.VK_3);
 
 		JComponent panel4 = makeCalendarPanel();
-		tabbedPane.addTab("Tab 4", icon, panel4, "Does nothing at all");
+		tabbedPane.addTab("Peter Meier", icon, panel4, "Does nothing at all");
 		tabbedPane.setMnemonicAt(3, KeyEvent.VK_4);
 
+		JComponent panel5 = makeCalendarPanel();
+		tabbedPane.addTab("Sophie Keller ", icon, panel5, "Does nothing at all");
+		tabbedPane.setMnemonicAt(3, KeyEvent.VK_4);
+		
 		// Add the tabbed pane to this panel.
 		add(tabbedPane);
 
