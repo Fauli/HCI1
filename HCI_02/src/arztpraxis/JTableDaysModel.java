@@ -1,6 +1,8 @@
 package arztpraxis;
 
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.Vector;
 
 import javax.swing.event.TableModelEvent;
@@ -8,58 +10,41 @@ import javax.swing.event.TableModelListener;
 import javax.swing.table.TableModel;
 
 class JTableDaysModel implements TableModel {
-	private Vector personVector = new Vector();
 	private Vector listenersVector = new Vector();
-
-	public void addDay(Calendar person1) {
-		int index = personVector.size();
-		personVector.add(person1);
-
-		TableModelEvent e = new TableModelEvent((TableModel) this, index,
-				index, TableModelEvent.ALL_COLUMNS, TableModelEvent.INSERT);
-
-		for (int i = 0, n = listenersVector.size(); i < n; i++) {
-			((TableModelListener) listenersVector.get(i)).tableChanged(e);
-		}
-	}
+	Calendar firstWeekDay = Calendar.getInstance();
 
 	public int getColumnCount() {
-		return 4;
+		return 6;
 	}
 
 	public int getRowCount() {
-		return personVector.size();
+//		return personVector.size();
+		return 0;
 	}
 
 	public String getColumnName(int column) {
-		switch (column) {
-		case 0:
-			return "Firstname";
-		case 1:
-			return "Lastname";
-		case 2:
-			return "Gender";
-		case 3:
-			return "Birthday";
-		default:
-			return null;
-		}
+		Calendar cali = firstWeekDay;
+		cali.add(Calendar.DATE, column);
+		Date date = cali.getTime();  
+		SimpleDateFormat format1 = new SimpleDateFormat("yyyy-MM-dd");
+		String date1 = format1.format(date);
+		return date1;
 	}
 
 	public Object getValueAt(int rowIndex, int columnIndex) {
-		Calendar person = (Calendar) personVector.get(rowIndex);
+//		Calendar person = (Calendar) personVector.get(rowIndex);
 
 		switch (columnIndex) {
 		case 0:
-			return person.getFirstName();
+			return "ahoi1";
 		case 1:
-			return person.getLastName();
+			return "ahoi2";
 		case 2:
-			return person.getGender();
+			return "ahoi3";
 		case 3:
-			return person.getBirthday();
+			return "ahoi4";
 		default:
-			return null;
+			return "bllubbbbbbb";
 		}
 	}
 
@@ -76,6 +61,19 @@ class JTableDaysModel implements TableModel {
 		default:
 			return null;
 		}
+	}
+
+	public void setFirtWeekDay(Calendar firstWeekDay) {
+		this.firstWeekDay = firstWeekDay;
+		
+		int index = 1;
+		TableModelEvent e = new TableModelEvent((TableModel) this, index,
+				index, TableModelEvent.ALL_COLUMNS, TableModelEvent.INSERT);
+		
+		for (int i = 0, n = listenersVector.size(); i < n; i++) {
+			((TableModelListener) listenersVector.get(i)).tableChanged(e);
+		}
+
 	}
 
 	public void addTableModelListener(TableModelListener l) {

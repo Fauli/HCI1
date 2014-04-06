@@ -36,7 +36,7 @@ public class TabPanel extends JPanel {
 		tabbedPane.addTab("Tab 2", icon, panel2, "Does twice as much nothing");
 		tabbedPane.setMnemonicAt(1, KeyEvent.VK_2);
 
-		JComponent panel3 = makeCalendarPanel2();
+		JComponent panel3 = makeCalendarPanel();
 		tabbedPane.addTab("Tab 3", icon, panel3, "Still does nothing");
 		tabbedPane.setMnemonicAt(2, KeyEvent.VK_3);
 
@@ -55,12 +55,6 @@ public class TabPanel extends JPanel {
 		CalendarPanel calendarPanel = new CalendarPanel();
 		// calendarPanel.setLayout(new GridLayout(1, 1));
 		return calendarPanel;
-	}
-
-	public JComponent makeCalendarPanel2() {
-		CalendarPanel2 calendarPanel2 = new CalendarPanel2();
-		// calendarPanel.setLayout(new GridLayout(1, 1));
-		return calendarPanel2;
 	}
 
 	public JComponent makeAufgabenPanel() {
