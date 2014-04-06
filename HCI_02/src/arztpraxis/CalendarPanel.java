@@ -6,6 +6,9 @@ import static java.util.Calendar.MILLISECOND;
 import static java.util.Calendar.MINUTE;
 import static java.util.Calendar.SECOND;
 
+import java.awt.Button;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.Calendar;
 
 import javax.swing.JPanel;
@@ -20,6 +23,50 @@ public class CalendarPanel extends JPanel {
 	public CalendarPanel() {
 		// super(new GridLayout(1, 1));
 
+		drawCalendar();
+		Button lastWeekBtn = new Button("Letzte Woche");
+		Button nextWeekBtn = new Button("Nächste Woche");
+		this.add(lastWeekBtn);
+		this.add(nextWeekBtn);
+		
+		
+		
+		lastWeekBtn.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				// TODO Auto-generated method stub
+				
+			}
+		});
+		
+		nextWeekBtn.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				// TODO Auto-generated method stub
+				
+			}
+		});
+		
+		final JTable theTable = new JTable(tableDaysModel);
+		add(new JScrollPane(theTable));
+		theTable.addMouseListener(new java.awt.event.MouseAdapter() {
+			@Override
+			public void mouseClicked(java.awt.event.MouseEvent evt) {
+				int row = theTable.rowAtPoint(evt.getPoint());
+				int col = theTable.columnAtPoint(evt.getPoint());
+				System.out.println("row: "+row+" col: "+col);
+				AddAppointmentFrame addAppFrame = new AddAppointmentFrame();
+				addAppFrame.setVisible(true);
+			}
+		});
+
+		// add(theTable);
+
+	}
+
+	private void drawCalendar() {
 		cal.set(HOUR_OF_DAY, 0);
 		cal.set(MINUTE, 0);
 		cal.set(SECOND, 0);
@@ -40,22 +87,6 @@ public class CalendarPanel extends JPanel {
 			tableDaysModel.addDay(day);
 
 		}
-
-		final JTable theTable = new JTable(tableDaysModel);
-		add(new JScrollPane(theTable));
-		theTable.addMouseListener(new java.awt.event.MouseAdapter() {
-			@Override
-			public void mouseClicked(java.awt.event.MouseEvent evt) {
-				int row = theTable.rowAtPoint(evt.getPoint());
-				int col = theTable.columnAtPoint(evt.getPoint());
-				System.out.println("row: "+row+" col: "+col);
-				AddAppointmentFrame addAppFrame = new AddAppointmentFrame();
-				addAppFrame.setVisible(true);
-			}
-		});
-
-		// add(theTable);
-
 	}
 
 }
