@@ -11,6 +11,7 @@ import java.awt.Insets;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Set;
 
@@ -119,6 +120,16 @@ public class AddAppointmentFrame extends JFrame {
 		for (Patient patient : patients) {
 			patientBoxModel.addElement(patient.getFirstName()+" "+patient.getLastName().toString());
 		}
+		
+		DefaultComboBoxModel<String> raumBoxModel = new DefaultComboBoxModel<String>();
+		raumBoxModel.addElement("Keine Speziellen Räumlichkeiten benötigt");
+		raumBoxModel.addElement("Praxisassisentenlabor 1");
+		raumBoxModel.addElement("Praxisassisentenlabor 2");
+		raumBoxModel.addElement("Ultraschallgerät Zimmer");
+		raumBoxModel.addElement("Rönten Zimmer");
+		raumBoxModel.addElement("Besprechungszimmer Karin Müller");
+		raumBoxModel.addElement("Besprechungszimmer Peter Meier");
+		raumBoxModel.addElement("Besprechungszimmer Sophie Keller");
 		
 		JLabel lblDatum = new JLabel("Datum");
 		GridBagConstraints gbc_lblDatum = new GridBagConstraints();
@@ -232,6 +243,22 @@ public class AddAppointmentFrame extends JFrame {
 		gbc_grundTextArea.gridx = 1;
 		gbc_grundTextArea.gridy = 6;
 		appointmentPanel.add(grundTextArea, gbc_grundTextArea);
+		
+		JLabel lblRaum = new JLabel("Raum");
+		GridBagConstraints gbc_lblRaum = new GridBagConstraints();
+		gbc_lblRaum.anchor = GridBagConstraints.EAST;
+		gbc_lblRaum.insets = new Insets(0, 0, 5, 5);
+		gbc_lblRaum.gridx = 0;
+		gbc_lblRaum.gridy = 7;
+		appointmentPanel.add(lblRaum, gbc_lblRaum);
+		
+		JComboBox raumComboBox = new JComboBox(raumBoxModel);
+		GridBagConstraints gbc_raumComboBox = new GridBagConstraints();
+		gbc_raumComboBox.insets = new Insets(0, 0, 5, 0);
+		gbc_raumComboBox.fill = GridBagConstraints.HORIZONTAL;
+		gbc_raumComboBox.gridx = 1;
+		gbc_raumComboBox.gridy = 7;
+		appointmentPanel.add(raumComboBox, gbc_raumComboBox);
 		
 		JPanel breakPanel = new JPanel();
 		tabbedPane.addTab("Break", null, breakPanel, null);

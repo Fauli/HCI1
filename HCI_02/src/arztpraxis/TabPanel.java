@@ -37,7 +37,7 @@ public class TabPanel extends JPanel {
 		tabbedPane.setMnemonicAt(1, KeyEvent.VK_2);
 
 		JComponent panel3 = makeCalendarPanel();
-		tabbedPane.addTab("Karin MŸller", icon, panel3, "Arzt");
+		tabbedPane.addTab("Karin Müller", icon, panel3, "Arzt");
 		tabbedPane.setMnemonicAt(2, KeyEvent.VK_3);
 
 		JComponent panel4 = makeCalendarPanel();
