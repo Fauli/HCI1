@@ -21,7 +21,7 @@ public class AufgabenPanel extends JPanel implements TableModelListener {
 		setBorder(new EmptyBorder(5, 5, 5, 5));
 		setLayout(new BorderLayout(0, 0));
 
-		JButton btnNewButton = new JButton("Aufgabe hinzufügen");
+		JButton btnNewButton = new JButton("Aufgabe hinzufŸgen");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				Aufgabe newAufgabe = new Aufgabe("");

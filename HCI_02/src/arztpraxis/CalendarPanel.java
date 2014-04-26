@@ -31,7 +31,7 @@ public class CalendarPanel extends JPanel {
 
 		drawCalendar();
 		Button lastWeekBtn = new Button("Letzte Woche");
-		Button nextWeekBtn = new Button("Nächste Woche");
+		Button nextWeekBtn = new Button("NŠchste Woche");
 		this.add(lastWeekBtn);
 
 		final JTable theTable = new JTable(tableDaysModel);
@@ -51,7 +51,6 @@ public class CalendarPanel extends JPanel {
 		DefaultComboBoxModel<String> dateBoxModel = new DefaultComboBoxModel<String>();
 
 		DateFormat df = new SimpleDateFormat("EEE dd.MM.yyyy");
-		boxCalendar.add(Calendar.DATE, 1);
 		boxCalendar.setFirstDayOfWeek(2);
 		for (int i = 0; i < 52; i++) {
 			System.out.println(df.format(boxCalendar.getTime()));

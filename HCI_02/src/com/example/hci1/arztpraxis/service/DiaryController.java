@@ -1,11 +1,15 @@
 package com.example.hci1.arztpraxis.service;
 
+import static java.util.Calendar.HOUR_OF_DAY;
+import static java.util.Calendar.MINUTE;
+
 import com.example.hci1.arztpraxis.domain.Allocation;
 import com.example.hci1.arztpraxis.domain.Appointment;
 import com.example.hci1.arztpraxis.domain.Assistant;
 import com.example.hci1.arztpraxis.domain.Break;
 import com.example.hci1.arztpraxis.domain.Doctor;
 import com.example.hci1.arztpraxis.domain.Patient;
+import com.example.hci1.arztpraxis.domain.Patient.Gender;
 import com.example.hci1.arztpraxis.domain.TreatingPerson;
 
 import java.io.BufferedReader;
@@ -38,9 +42,21 @@ public class DiaryController {
 
     public DiaryController() {
         allocations = new HashSet<>();
+        
+        Calendar cal = Calendar.getInstance();
+        cal.set(MINUTE, 0);
+		cal.set(HOUR_OF_DAY, 10);
+		cal.set(Calendar.MONTH, 4);
+		cal.set(Calendar.DAY_OF_MONTH, 6);
+		Doctor doc = new Doctor("Sophie", "Keller");
+		
+		Patient p = new Patient(Gender.MALE,"Test","TestLast","Address","PLZ","CityString","phone number",cal);
+        Appointment app = new Appointment(cal, cal, doc, p, "Reason", "Nothing");
+        allocations.add(app);
+        System.out.println(app.toString());
 
         treatingPersons = new HashSet<>();
-        treatingPersons.add(new Doctor("Karin", "MÃ¼ller"));
+        treatingPersons.add(new Doctor("Karin", "Müller"));
         treatingPersons.add(new Doctor("Peter", "Meier"));
         treatingPersons.add(new Doctor("Sophie", "Keller"));
         treatingPersons.add(new Assistant());

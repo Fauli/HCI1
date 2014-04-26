@@ -25,27 +25,27 @@ public class TabPanel extends JPanel {
 		JComponent panel11 = makeCalendarPanel();
 		JComponent panel12 = makeAufgabenPanel();
 		JSplitPane splitPane1 = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, panel11, panel12);
-		splitPane1.setDividerLocation(600);
-		tabbedPane.addTab("Michaela Schneider", icon, splitPane1, "Does nothing");
+		splitPane1.setDividerLocation(700);
+		tabbedPane.addTab("Michaela Schneider", icon, splitPane1, "Assistent");
 		tabbedPane.setMnemonicAt(0, KeyEvent.VK_1);
 
 		JComponent panel21 = makeCalendarPanel();
 		JComponent panel22 = makeAufgabenPanel();
 		JSplitPane splitPane2 = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, panel21, panel22);
-		splitPane2.setDividerLocation(600);
-		tabbedPane.addTab("Franz Bodmer", icon, splitPane2, "Does twice as much nothing");
+		splitPane2.setDividerLocation(700);
+		tabbedPane.addTab("Franz Bodmer", icon, splitPane2, "Assistent");
 		tabbedPane.setMnemonicAt(1, KeyEvent.VK_2);
 
 		JComponent panel3 = makeCalendarPanel();
-		tabbedPane.addTab("Karin Müller", icon, panel3, "Still does nothing");
+		tabbedPane.addTab("Karin MŸller", icon, panel3, "Arzt");
 		tabbedPane.setMnemonicAt(2, KeyEvent.VK_3);
 
 		JComponent panel4 = makeCalendarPanel();
-		tabbedPane.addTab("Peter Meier", icon, panel4, "Does nothing at all");
+		tabbedPane.addTab("Peter Meier", icon, panel4, "Arzt");
 		tabbedPane.setMnemonicAt(3, KeyEvent.VK_4);
 
 		JComponent panel5 = makeCalendarPanel();
-		tabbedPane.addTab("Sophie Keller ", icon, panel5, "Does nothing at all");
+		tabbedPane.addTab("Sophie Keller ", icon, panel5, "Arzt");
 		tabbedPane.setMnemonicAt(3, KeyEvent.VK_4);
 		
 		JComponent panel6 = makePatientenPanel();
