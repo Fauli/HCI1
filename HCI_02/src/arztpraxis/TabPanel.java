@@ -48,6 +48,12 @@ public class TabPanel extends JPanel {
 		tabbedPane.addTab("Sophie Keller ", icon, panel5, "Does nothing at all");
 		tabbedPane.setMnemonicAt(3, KeyEvent.VK_4);
 		
+		JComponent panel6 = makePatientenPanel();
+		tabbedPane.addTab("Patienten verwalten", icon, panel6, "Does nothing at all");
+		tabbedPane.setMnemonicAt(3, KeyEvent.VK_4);
+		
+		
+		
 		// Add the tabbed pane to thi s panel.
 		add(tabbedPane);
 
@@ -73,6 +79,11 @@ public class TabPanel extends JPanel {
 		filler.setHorizontalAlignment(JLabel.CENTER);
 		panel.setLayout(new GridLayout(1, 1));
 		panel.add(filler);
+		return panel;
+	}
+	
+	public JComponent makePatientenPanel() {
+		PatientenPanel panel = new PatientenPanel();
 		return panel;
 	}
 

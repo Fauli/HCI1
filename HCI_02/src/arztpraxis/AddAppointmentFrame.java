@@ -25,6 +25,10 @@ import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
 
+import net.sourceforge.jdatepicker.impl.JDatePanelImpl;
+import net.sourceforge.jdatepicker.impl.JDatePickerImpl;
+import net.sourceforge.jdatepicker.impl.UtilDateModel;
+
 import com.example.hci1.arztpraxis.domain.Doctor;
 import com.example.hci1.arztpraxis.domain.Patient;
 import com.example.hci1.arztpraxis.service.DiaryController;
@@ -55,7 +59,7 @@ public class AddAppointmentFrame extends JFrame {
 	 */
 	public AddAppointmentFrame() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 450, 300);
+		setBounds(100, 100, 487, 397);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		contentPane.setLayout(new BorderLayout(0, 0));
@@ -70,18 +74,10 @@ public class AddAppointmentFrame extends JFrame {
 		tabbedPane.addTab("Appointment", null, appointmentPanel, null);
 		GridBagLayout gbl_appointmentPanel = new GridBagLayout();
 		gbl_appointmentPanel.columnWidths = new int[]{0, 0, 0};
-		gbl_appointmentPanel.rowHeights = new int[]{0, 0, 0, 0, 0, 0, 0};
+		gbl_appointmentPanel.rowHeights = new int[]{0, 0, 0, 0, 0, 0, 0,0,0};
 		gbl_appointmentPanel.columnWeights = new double[]{0.0, 1.0, Double.MIN_VALUE};
-		gbl_appointmentPanel.rowWeights = new double[]{0.0, 0.0, 0.0, 0.0, 0.0, 1.0, Double.MIN_VALUE};
+		gbl_appointmentPanel.rowWeights = new double[]{0.0, 0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE};
 		appointmentPanel.setLayout(gbl_appointmentPanel);
-		
-		JLabel lblStartzeit = new JLabel("Startzeit");
-		GridBagConstraints gbc_lblStartzeit = new GridBagConstraints();
-		gbc_lblStartzeit.anchor = GridBagConstraints.EAST;
-		gbc_lblStartzeit.insets = new Insets(0, 0, 5, 5);
-		gbc_lblStartzeit.gridx = 0;
-		gbc_lblStartzeit.gridy = 0;
-		appointmentPanel.add(lblStartzeit, gbc_lblStartzeit);
 		
 		DefaultComboBoxModel<String> startZeitBoxModel = new DefaultComboBoxModel<String>();
 		startZeitBoxModel.addElement("Startzeit auswählen..");
@@ -96,22 +92,6 @@ public class AddAppointmentFrame extends JFrame {
 			cal.add(MINUTE, 15);
 		}
 		
-		JComboBox startZeitComboBox = new JComboBox(startZeitBoxModel);
-		GridBagConstraints gbc_startZeitComboBox = new GridBagConstraints();
-		gbc_startZeitComboBox.insets = new Insets(0, 0, 5, 0);
-		gbc_startZeitComboBox.fill = GridBagConstraints.HORIZONTAL;
-		gbc_startZeitComboBox.gridx = 1;
-		gbc_startZeitComboBox.gridy = 0;
-		appointmentPanel.add(startZeitComboBox, gbc_startZeitComboBox);
-		
-		JLabel lblEndzeit = new JLabel("Endzeit");
-		GridBagConstraints gbc_lblEndzeit = new GridBagConstraints();
-		gbc_lblEndzeit.anchor = GridBagConstraints.EAST;
-		gbc_lblEndzeit.insets = new Insets(0, 0, 5, 5);
-		gbc_lblEndzeit.gridx = 0;
-		gbc_lblEndzeit.gridy = 1;
-		appointmentPanel.add(lblEndzeit, gbc_lblEndzeit);
-		
 		DefaultComboBoxModel<String> endZeitBoxModel = new DefaultComboBoxModel<String>();
 		endZeitBoxModel.addElement("Endzeit auswählen..");
 		
@@ -124,22 +104,6 @@ public class AddAppointmentFrame extends JFrame {
 			cal.add(MINUTE, 15);
 		}
 		
-		JComboBox endZeitComboBox = new JComboBox(endZeitBoxModel);
-		GridBagConstraints gbc_endZeitComboBox = new GridBagConstraints();
-		gbc_endZeitComboBox.insets = new Insets(0, 0, 5, 0);
-		gbc_endZeitComboBox.fill = GridBagConstraints.HORIZONTAL;
-		gbc_endZeitComboBox.gridx = 1;
-		gbc_endZeitComboBox.gridy = 1;
-		appointmentPanel.add(endZeitComboBox, gbc_endZeitComboBox);
-		
-		JLabel lblArzt = new JLabel("Arzt");
-		GridBagConstraints gbc_lblArzt = new GridBagConstraints();
-		gbc_lblArzt.anchor = GridBagConstraints.EAST;
-		gbc_lblArzt.insets = new Insets(0, 0, 5, 5);
-		gbc_lblArzt.gridx = 0;
-		gbc_lblArzt.gridy = 2;
-		appointmentPanel.add(lblArzt, gbc_lblArzt);
-		
 		DefaultComboBoxModel<String> arztBoxModel = new DefaultComboBoxModel<String>();
 		arztBoxModel.addElement("Arzt auswählen..");
 		
@@ -147,22 +111,6 @@ public class AddAppointmentFrame extends JFrame {
 		for (Doctor doctor : doctors) {
 			arztBoxModel.addElement(doctor.getFirstName()+" "+doctor.getLastName().toString());
 		}
-		
-		JComboBox arztComboBox = new JComboBox(arztBoxModel);
-		GridBagConstraints gbc_arztComboBox = new GridBagConstraints();
-		gbc_arztComboBox.insets = new Insets(0, 0, 5, 0);
-		gbc_arztComboBox.fill = GridBagConstraints.HORIZONTAL;
-		gbc_arztComboBox.gridx = 1;
-		gbc_arztComboBox.gridy = 2;
-		appointmentPanel.add(arztComboBox, gbc_arztComboBox);
-		
-		JLabel lblPatient = new JLabel("Patient");
-		GridBagConstraints gbc_lblPatient = new GridBagConstraints();
-		gbc_lblPatient.anchor = GridBagConstraints.EAST;
-		gbc_lblPatient.insets = new Insets(0, 0, 5, 5);
-		gbc_lblPatient.gridx = 0;
-		gbc_lblPatient.gridy = 3;
-		appointmentPanel.add(lblPatient, gbc_lblPatient);
 		
 		DefaultComboBoxModel<String> patientBoxModel = new DefaultComboBoxModel<String>();
 		patientBoxModel.addElement("Patient auswählen..");
@@ -172,12 +120,85 @@ public class AddAppointmentFrame extends JFrame {
 			patientBoxModel.addElement(patient.getFirstName()+" "+patient.getLastName().toString());
 		}
 		
+		JLabel lblDatum = new JLabel("Datum");
+		GridBagConstraints gbc_lblDatum = new GridBagConstraints();
+		gbc_lblDatum.insets = new Insets(0, 0, 5, 5);
+		gbc_lblDatum.gridx = 0;
+		gbc_lblDatum.gridy = 0;
+		appointmentPanel.add(lblDatum, gbc_lblDatum);
+		
+		UtilDateModel model = new UtilDateModel();
+		JDatePanelImpl datePanel = new JDatePanelImpl(model);
+		JDatePickerImpl datePicker = new JDatePickerImpl(datePanel);
+		
+		GridBagConstraints gbc_lblNewLabel = new GridBagConstraints();
+		gbc_lblNewLabel.insets = new Insets(0, 0, 5, 0);
+		gbc_lblNewLabel.gridx = 1;
+		gbc_lblNewLabel.gridy = 0;
+		appointmentPanel.add(datePicker, gbc_lblNewLabel);
+		
+		JLabel lblStartzeit = new JLabel("Startzeit");
+		GridBagConstraints gbc_lblStartzeit = new GridBagConstraints();
+		gbc_lblStartzeit.anchor = GridBagConstraints.EAST;
+		gbc_lblStartzeit.insets = new Insets(0, 0, 5, 5);
+		gbc_lblStartzeit.gridx = 0;
+		gbc_lblStartzeit.gridy = 1;
+		appointmentPanel.add(lblStartzeit, gbc_lblStartzeit);
+		
+		JComboBox startZeitComboBox = new JComboBox(startZeitBoxModel);
+		GridBagConstraints gbc_startZeitComboBox = new GridBagConstraints();
+		gbc_startZeitComboBox.insets = new Insets(0, 0, 5, 0);
+		gbc_startZeitComboBox.fill = GridBagConstraints.HORIZONTAL;
+		gbc_startZeitComboBox.gridx = 1;
+		gbc_startZeitComboBox.gridy = 1;
+		appointmentPanel.add(startZeitComboBox, gbc_startZeitComboBox);
+		
+		JLabel lblEndzeit = new JLabel("Endzeit");
+		GridBagConstraints gbc_lblEndzeit = new GridBagConstraints();
+		gbc_lblEndzeit.anchor = GridBagConstraints.EAST;
+		gbc_lblEndzeit.insets = new Insets(0, 0, 5, 5);
+		gbc_lblEndzeit.gridx = 0;
+		gbc_lblEndzeit.gridy = 2;
+		appointmentPanel.add(lblEndzeit, gbc_lblEndzeit);
+		
+		JComboBox endZeitComboBox = new JComboBox(endZeitBoxModel);
+		GridBagConstraints gbc_endZeitComboBox = new GridBagConstraints();
+		gbc_endZeitComboBox.insets = new Insets(0, 0, 5, 0);
+		gbc_endZeitComboBox.fill = GridBagConstraints.HORIZONTAL;
+		gbc_endZeitComboBox.gridx = 1;
+		gbc_endZeitComboBox.gridy = 2;
+		appointmentPanel.add(endZeitComboBox, gbc_endZeitComboBox);
+		
+		JLabel lblArzt = new JLabel("Arzt");
+		GridBagConstraints gbc_lblArzt = new GridBagConstraints();
+		gbc_lblArzt.anchor = GridBagConstraints.EAST;
+		gbc_lblArzt.insets = new Insets(0, 0, 5, 5);
+		gbc_lblArzt.gridx = 0;
+		gbc_lblArzt.gridy = 3;
+		appointmentPanel.add(lblArzt, gbc_lblArzt);
+		
+		JComboBox arztComboBox = new JComboBox(arztBoxModel);
+		GridBagConstraints gbc_arztComboBox = new GridBagConstraints();
+		gbc_arztComboBox.insets = new Insets(0, 0, 5, 0);
+		gbc_arztComboBox.fill = GridBagConstraints.HORIZONTAL;
+		gbc_arztComboBox.gridx = 1;
+		gbc_arztComboBox.gridy = 3;
+		appointmentPanel.add(arztComboBox, gbc_arztComboBox);
+		
+		JLabel lblPatient = new JLabel("Patient");
+		GridBagConstraints gbc_lblPatient = new GridBagConstraints();
+		gbc_lblPatient.anchor = GridBagConstraints.EAST;
+		gbc_lblPatient.insets = new Insets(0, 0, 5, 5);
+		gbc_lblPatient.gridx = 0;
+		gbc_lblPatient.gridy = 4;
+		appointmentPanel.add(lblPatient, gbc_lblPatient);
+		
 		JComboBox patientComboBox = new JComboBox(patientBoxModel);
 		GridBagConstraints gbc_patientComboBox = new GridBagConstraints();
 		gbc_patientComboBox.insets = new Insets(0, 0, 5, 0);
 		gbc_patientComboBox.fill = GridBagConstraints.HORIZONTAL;
 		gbc_patientComboBox.gridx = 1;
-		gbc_patientComboBox.gridy = 3;
+		gbc_patientComboBox.gridy = 4;
 		appointmentPanel.add(patientComboBox, gbc_patientComboBox);
 		
 		JLabel lblGrund = new JLabel("Grund");
@@ -185,7 +206,7 @@ public class AddAppointmentFrame extends JFrame {
 		gbc_lblGrund.anchor = GridBagConstraints.EAST;
 		gbc_lblGrund.insets = new Insets(0, 0, 5, 5);
 		gbc_lblGrund.gridx = 0;
-		gbc_lblGrund.gridy = 4;
+		gbc_lblGrund.gridy = 5;
 		appointmentPanel.add(lblGrund, gbc_lblGrund);
 		
 		grundTextField = new JTextField();
@@ -193,22 +214,23 @@ public class AddAppointmentFrame extends JFrame {
 		gbc_grundTextField.insets = new Insets(0, 0, 5, 0);
 		gbc_grundTextField.fill = GridBagConstraints.HORIZONTAL;
 		gbc_grundTextField.gridx = 1;
-		gbc_grundTextField.gridy = 4;
+		gbc_grundTextField.gridy = 5;
 		appointmentPanel.add(grundTextField, gbc_grundTextField);
 		grundTextField.setColumns(10);
 		
 		JLabel lblBemerkungen = new JLabel("Bemerkungen");
 		GridBagConstraints gbc_lblBemerkungen = new GridBagConstraints();
-		gbc_lblBemerkungen.insets = new Insets(0, 0, 0, 5);
+		gbc_lblBemerkungen.insets = new Insets(0, 0, 5, 5);
 		gbc_lblBemerkungen.gridx = 0;
-		gbc_lblBemerkungen.gridy = 5;
+		gbc_lblBemerkungen.gridy = 6;
 		appointmentPanel.add(lblBemerkungen, gbc_lblBemerkungen);
 		
 		JTextArea grundTextArea = new JTextArea();
 		GridBagConstraints gbc_grundTextArea = new GridBagConstraints();
+		gbc_grundTextArea.insets = new Insets(0, 0, 5, 0);
 		gbc_grundTextArea.fill = GridBagConstraints.BOTH;
 		gbc_grundTextArea.gridx = 1;
-		gbc_grundTextArea.gridy = 5;
+		gbc_grundTextArea.gridy = 6;
 		appointmentPanel.add(grundTextArea, gbc_grundTextArea);
 		
 		JPanel breakPanel = new JPanel();
