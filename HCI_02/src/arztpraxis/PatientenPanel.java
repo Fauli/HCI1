@@ -23,6 +23,19 @@ public class PatientenPanel extends JPanel {
 //		theTable.set
 		add(new JScrollPane(theTable));
 		
+		theTable.addMouseListener(new java.awt.event.MouseAdapter() {
+			@Override
+			public void mouseClicked(java.awt.event.MouseEvent evt) {
+				int row = theTable.rowAtPoint(evt.getPoint());
+				int col = theTable.columnAtPoint(evt.getPoint());
+				System.out.println("row: " + row + " col: " + col);
+				AddPatientenFrame addPatientFrame = new AddPatientenFrame();
+				Patient selectedPatient = (Patient) tableModel.getObjectAt(row);
+				addPatientFrame.setPatient(selectedPatient);
+				addPatientFrame.setVisible(true);
+			}
+		});
+		
 		Button addNewPatientButton = new Button("Neuen Patienten erfassen");
 		
 		addNewPatientButton.addActionListener(new ActionListener() {

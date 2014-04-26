@@ -18,30 +18,30 @@ class JTablePatientenModel implements TableModel {
 	DiaryController dc = new DiaryController();
 	SimpleDateFormat format1 = new SimpleDateFormat("yyyy-MM-dd");
 
-//	public JTablePatientenModel(ArrayList<Patient> patients) {
+	// public JTablePatientenModel(ArrayList<Patient> patients) {
 	public JTablePatientenModel() {
 		DayClass rowLabel = new DayClass();
-		
-		
+
 		for (Patient patient : dc.getPatients()) {
-			addPatientColumn(patient.getFirstName());
-			addPatientColumn(patient.getLastName());
-			addPatientColumn(patient.getGender().toString());
-			addPatientColumn(patient.getAddress());
-			String formattedBirthday = format1.format(patient.getBirthday().getTime());
-			addPatientColumn(formattedBirthday);
+			patientVector.add(patient);
+			// addPatientColumn(patient.getFirstName());
+			// addPatientColumn(patient.getLastName());
+			// addPatientColumn(patient.getGender().toString());
+			// addPatientColumn(patient.getAddress());
+			// String formattedBirthday =
+			// format1.format(patient.getBirthday().getTime());
+			// addPatientColumn(formattedBirthday);
 		}
-		
-		
-//		addDay(rowLabel);
+
+		// addDay(rowLabel);
 	}
 
 	public int getColumnCount() {
-		//return patientVector.size();
+		// return patientVector.size();
 		return 5;
 	}
-	
-	public void addPatientColumn(String val){
+
+	public void addPatientColumn(String val) {
 		int index = patientVector.size();
 		patientVector.add(val);
 
@@ -53,44 +53,67 @@ class JTablePatientenModel implements TableModel {
 		}
 	}
 
-	
-
 	public int getRowCount() {
 		// return personVector.size();
 		return patientVector.size();
 	}
-	
-	
 
 	public String getColumnName(int column) {
 		if (0 == column) {
 			return "Vorname";
-		}if (1 == column) {
+		}
+		if (1 == column) {
 			return "Nachname";
-		}if (2 == column) {
+		}
+		if (2 == column) {
 			return "Geschlecht";
-		}if (3 == column) {
+		}
+		if (3 == column) {
 			return "Adresse";
-		}if (4 == column) {
+		}
+		if (4 == column) {
 			return "Geburtstag";
 		} else {
 			return "??";
 		}
-//		else {
-//			Calendar cali = firstWeekDay;
-//			cali.add(Calendar.DATE, column - 1);
-//			Date date = cali.getTime();
-//			SimpleDateFormat format1 = new SimpleDateFormat("yyyy-MM-dd");
-//			String date1 = format1.format(date);
-//			return date1;
-//		}
+		// else {
+		// Calendar cali = firstWeekDay;
+		// cali.add(Calendar.DATE, column - 1);
+		// Date date = cali.getTime();
+		// SimpleDateFormat format1 = new SimpleDateFormat("yyyy-MM-dd");
+		// String date1 = format1.format(date);
+		// return date1;
+		// }
 	}
 
 	public Object getValueAt(int rowIndex, int columnIndex) {
-		String day = (String) patientVector.get(columnIndex);
-//		patientVector.
-		//patientVector.removeElementAt(columnIndex);
-		return day;
+		Patient patient = (Patient) patientVector.get(rowIndex);
+		if (0 == columnIndex) {
+			return patient.getFirstName();
+		} else if (1 == columnIndex) {
+			return patient.getLastName();
+		} else if (2 == columnIndex) {
+			return patient.getGender().toString();
+		} else if (3 == columnIndex) {
+			return patient.getAddress();
+		} else if (4 == columnIndex) {
+			String formattedBirthday = format1.format(patient.getBirthday()
+					.getTime());
+			return formattedBirthday;
+		} else if (5 == columnIndex) {
+			return patient;
+		} else {
+			return "??";
+		}
+
+		// patientVector.
+		// patientVector.removeElementAt(columnIndex);
+	}
+
+	public Object getObjectAt(int rowIndex) {
+		Patient patient2 = (Patient) patientVector.get(rowIndex);
+
+		return patient2;
 	}
 
 	public Class getColumnClass(int columnIndex) {
