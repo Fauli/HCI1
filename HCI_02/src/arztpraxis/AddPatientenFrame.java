@@ -4,14 +4,18 @@ import java.awt.EventQueue;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 import java.awt.Insets;
-import java.util.Set;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.Calendar;
 
 import javax.swing.DefaultComboBoxModel;
+import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
+import javax.swing.SwingConstants;
 import javax.swing.border.EmptyBorder;
 
 import net.sourceforge.jdatepicker.impl.JDatePanelImpl;
@@ -20,10 +24,7 @@ import net.sourceforge.jdatepicker.impl.UtilDateModel;
 
 import com.example.hci1.arztpraxis.domain.Patient;
 import com.example.hci1.arztpraxis.domain.Patient.Gender;
-import javax.swing.JButton;
-import javax.swing.SwingConstants;
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
+import com.example.hci1.arztpraxis.service.DiaryController;
 
 public class AddPatientenFrame extends JFrame {
 
@@ -37,6 +38,7 @@ public class AddPatientenFrame extends JFrame {
 	UtilDateModel model = new UtilDateModel();
 	JDatePanelImpl datePanel = new JDatePanelImpl(model);
 	JDatePickerImpl datePicker = new JDatePickerImpl(datePanel);
+	DiaryController dc = new DiaryController();
 
 	/**
 	 * Launch the application.
@@ -53,7 +55,7 @@ public class AddPatientenFrame extends JFrame {
 			}
 		});
 	}
-	
+
 	JComboBox genderComboBox;
 
 	/**
@@ -206,7 +208,6 @@ public class AddPatientenFrame extends JFrame {
 		gbc_lblGeburtstag.gridy = 7;
 		contentPane.add(lblGeburtstag, gbc_lblGeburtstag);
 
-
 		datePicker.getJFormattedTextField().setHorizontalAlignment(
 				SwingConstants.LEFT);
 		GridBagConstraints gbc_btnNewButton = new GridBagConstraints();
@@ -218,8 +219,23 @@ public class AddPatientenFrame extends JFrame {
 		JButton btnSpeichern = new JButton("Speichern");
 		btnSpeichern.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
+				Calendar cal = Calendar.getInstance();
+				Gender g;
+				if(genderComboBox.getSelectedItem() == "MALE"){
+					g = Gender.MALE;
+				} else {
+					g = Gender.FEMALE;
+				}
+				
 				System.out
 						.println("WOULD now save the entry, but currently not.. needs to be implemented");
+				Patient newPatient = new Patient(g, vornameText
+						.getText(), nachnameText.getText(), adresseText
+						.getText(), plzText.getText(), ortText.getText(),
+						telefonText.getText(),cal);
+				
+				System.out.println("New entry "+newPatient.toString());
+				
 				setVisible(false);
 				dispose();
 			}
@@ -235,11 +251,15 @@ public class AddPatientenFrame extends JFrame {
 		// TODO Auto-generated method stub
 		vornameText.setText(selectedPatient.getFirstName());
 		nachnameText.setText(selectedPatient.getLastName());
-		genderComboBox.setSelectedItem(selectedPatient.getGender());
+		if (selectedPatient.getGender() == Gender.MALE) {
+			genderComboBox.setSelectedIndex(2);
+		} else {
+			genderComboBox.setSelectedIndex(1);
+		}
 		adresseText.setText(selectedPatient.getAddress());
 		plzText.setText(selectedPatient.getPostCode());
 		ortText.setText(selectedPatient.getCity());
 		telefonText.setText(selectedPatient.getPhoneNumber());
-//		datePanel.set
+		// datePanel.set
 	}
 }
